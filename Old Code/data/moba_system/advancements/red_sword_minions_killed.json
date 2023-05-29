@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "redsword_killed_by_player": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:piglin",
+          "team": "1",
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:golden_sword"
+              ]
+            }
+          }
+        },
+        "killing_blow": {
+          "direct_entity": {
+            "type": "minecraft:player",
+            "team": "2"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "moba_system:reward/swordsman"
+  }
+}

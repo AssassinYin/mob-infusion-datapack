@@ -1,0 +1,1 @@
+tellraw @s {"text":"Words engraved on the wall:\nLEAVE THIS THING ALONE\nTHERE ARE THINGS THAT NEEDS TO BE LEFT UN\u2026NO\u2026\u2026\n*[The sentence on the wall seems to be left unfinished.]\n ","color":"gray"}

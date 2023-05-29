@@ -1,0 +1,1 @@
+setblock 0 256 0 minecraft:oak_sign
