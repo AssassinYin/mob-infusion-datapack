@@ -1,5 +1,8 @@
-#player stats time require before timer become zero
-scoreboard objectives add AttackSpeed dummy
+
+#player stats, affact damage player dealt
+scoreboard objectives add AttackDamage dummy "Current Attack Damage Stats * 10000"
+#player stats, time require before timer become zero
+scoreboard objectives add AttackSpeed dummy "Current Attack Speed Stats * 10000"
 
 #timer between each melee attack swing
 scoreboard objectives add AttackTimer dummy

@@ -1,8 +1,5 @@
 {
   "values":[
-    "blockrealm:init",
-	  "slowcast:zprivate/init",
-    "demo:init",
-    "math:zprivate/init"
+    "blockrealm:init"
   ]
 }

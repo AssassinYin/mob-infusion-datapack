@@ -3,6 +3,8 @@
 #update vanilla effects
 
 #apply vanilla effects
+#1 Speed
+#2 Slowness
 #3 Haste
 #4 Mining Fatigue
 #5 Strength
@@ -12,16 +14,12 @@
 #18 Weakness
 
 #apply custom effects
-#11 Resistance
-#12 Fire Resistance
-#19 Poison
-#20 Wither
 #22 Absorption: Increase shield value
-execute if data entity @s {ActiveEffects:[{Id:22b}]} run function blockrealm:entity/effect/apply/vanilla/custom/absorption
+execute if data entity @s {ActiveEffects:[{Id:22}]} run function blockrealm:entity/effect/apply/vanilla/custom/absorption
+#31 Bad Omen
+#32 Hero of the Village
 
 #remain unchange
-#1 Speed
-#2 Slowness
 #9 Nausea
 #13 Water Breathing	
 #14 Invisibility
@@ -30,6 +28,10 @@ execute if data entity @s {ActiveEffects:[{Id:22b}]} run function blockrealm:ent
 #17 Hunger
 #23 Saturation
 #24 Glowing
+#28 Slow Falling
+#29 Conduit Power
+#30 Dolphin's Grace
+#33 Darkness
 
 #used in custom effects
 #8 Jump Boost
@@ -37,13 +39,18 @@ execute if data entity @s {ActiveEffects:[{Id:22b}]} run function blockrealm:ent
 #25 Levitation
 
 #unused
+#11 Resistance
+#12 Fire Resistance
+#19 Poison
+#20 Wither
 #21 Health Boost
+execute if data entity @s {ActiveEffects:[{Id:21}]} run effect clear @s health_boost
 #26 Luck
 #27 Bad Luck
 
 #immunity effects
 execute if score @s FireResist matches 1.. run function blockrealm:entity/effect/apply/immunity/fire_resist
-execute if score @s FrostedResist matches 1.. run function blockrealm:entity/effect/apply/immunity/frost_resist
+execute if score @s FrostedResist matches 1.. run function blockrealm:entity/effect/apply/immunity/frosted_resist
 
 execute if score @s ImmuneEnergyBlock matches 1.. run function blockrealm:entity/effect/apply/immunity/immune_energy_block
 execute if score @s ImmuneHealBlock matches 1.. run function blockrealm:entity/effect/apply/immunity/immune_heal_block
@@ -60,38 +67,37 @@ execute if score @s HealBlock matches 1.. run function blockrealm:entity/effect/
 #control effects
 #start effect
 execute if score @s Stun matches 1.. unless entity @s[tag=Stun] run function blockrealm:entity/effect/apply/control/start/stun
-execute if score @s Frost matches 1.. unless entity @s[tag=Frost] run function blockrealm:entity/effect/apply/control/start/frost
+execute if score @s Frosted matches 1.. unless entity @s[tag=Frosted] run function blockrealm:entity/effect/apply/control/start/frosted
 execute if score @s Airborne matches 1.. unless entity @s[tag=Airborne] run function blockrealm:entity/effect/apply/control/start/airborne
 execute if score @s Root matches 1.. unless entity @s[tag=Root] run function blockrealm:entity/effect/apply/control/start/root
 
 #end effect
 execute if score @s Stun matches 0 run function blockrealm:entity/effect/apply/control/end/stun
-execute if score @s Frost matches 0 run function blockrealm:entity/effect/apply/control/end/frost
+execute if score @s Frosted matches 0 run function blockrealm:entity/effect/apply/control/end/frosted
 execute if score @s Airborne matches 0 run function blockrealm:entity/effect/apply/control/end/airborne
 execute if score @s Root matches 0 run function blockrealm:entity/effect/apply/control/end/root
 
 #update timer & particle
 execute if score @s Stun matches 1.. run function blockrealm:entity/effect/apply/control/effect/stun
-execute if score @s Frost matches 1.. run function blockrealm:entity/effect/apply/control/effect/frost
+execute if score @s Frosted matches 1.. run function blockrealm:entity/effect/apply/control/effect/frosted
 execute if score @s Airborne matches 1.. run function blockrealm:entity/effect/apply/control/effect/airborne
 execute if score @s Root matches 1.. run function blockrealm:entity/effect/apply/control/effect/root
 
 execute if score @s Silence matches 1.. run function blockrealm:entity/effect/apply/control/effect/silence
 
-#damage effects
-#resist type
-execute if score @s Resistance matches 1.. run function blockrealm:entity/effect/apply/damage/resist_type/resistance
-execute if score @s Bleeding matches 1.. run function blockrealm:entity/effect/apply/damage/resist_type/bleeding
-
-#inflict type
-execute if score @s Ignited matches 1.. run function blockrealm:entity/effect/apply/damage/inflict_type/ignited
-execute if score @s Wither matches 1.. run function blockrealm:entity/effect/apply/damage/inflict_type/wither
-execute if score @s Poison matches 1.. run function blockrealm:entity/effect/apply/damage/inflict_type/poison
+#dot effects
+execute if score @s Ignited matches 1.. run function blockrealm:entity/effect/apply/dot/ignited
+execute if score @s Wither matches 1.. run function blockrealm:entity/effect/apply/dot/wither
+execute if score @s Poison matches 1.. run function blockrealm:entity/effect/apply/dot/poison
 
 #block effects
 execute if score @s EnergyBlock matches 1.. run function blockrealm:entity/effect/apply/block/energy_block
 execute if score @s HealBlock matches 1.. run function blockrealm:entity/effect/apply/block/heal_block
 execute if score @s DisableShield matches 1.. run function blockrealm:entity/effect/apply/block/disable_shield
+
+#other effects
+execute if score @s Resistance matches 1.. run function blockrealm:entity/effect/apply/damage/resist_type/resistance
+execute if score @s Bleeding matches 1.. run function blockrealm:entity/effect/apply/damage/resist_type/bleeding
 
 #lock motion effect
 execute at @s[type=player,tag=headlock] as @e[tag=headlock,type=area_effect_cloud,sort=nearest] if score @s PlayerID = @p PlayerID run tp @p @s
