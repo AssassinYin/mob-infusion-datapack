@@ -1,4 +1,4 @@
-### Resistance effect: Takes 50% less damage.
+### Resistance effect: Takes 50% less physical damage.
 
 scoreboard players operation @s PhDamage /= 2 Const
 

@@ -2,7 +2,16 @@ forceload add -8 -8 7 7
 
 scoreboard objectives add temp dummy
 
+scoreboard objectives add PlayerID dummy
+scoreboard objectives add System dummy
+
+scoreboard players set $Difficulty System 0
+scoreboard players set $Initialized System 1
+
 scoreboard objectives add Const dummy
+scoreboard players set 100000 Const 100000
+scoreboard players set 20000 Const 20000
+scoreboard players set 10000 Const 10000
 scoreboard players set 2500 Const 2500
 scoreboard players set 1000 Const 1000
 scoreboard players set 200 Const 200
@@ -21,9 +30,3 @@ scoreboard players set -1 Const -1
 
 function blockrealm:display/init
 function blockrealm:entity/init
-
-scoreboard objectives add PlayerID dummy
-scoreboard objectives add System dummy
-
-scoreboard players set $Difficulty System 0
-scoreboard players set $Initialized System 1

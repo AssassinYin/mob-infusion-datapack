@@ -1,4 +1,4 @@
-### Bleeding effect: Takes 50% more damage.
+### Bleeding effect: Takes 50% more physical damage.
 
 scoreboard players operation @s PhDamage *= 3 Const
 scoreboard players operation @s PhDamage /= 2 Const

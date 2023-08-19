@@ -3,7 +3,7 @@
 #base stats
 scoreboard players set @s Health 0
 scoreboard players set @s MaxHealth 0
-scoreboard players set @s HealthBase 2000
+scoreboard players set @s HealthBase 200000
 scoreboard players set @s HRegBase 0
 
 scoreboard players set @s Energy 100

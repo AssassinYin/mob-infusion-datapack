@@ -11,7 +11,7 @@ scoreboard objectives add Untargetable dummy
 
 scoreboard objectives add Silence dummy
 scoreboard objectives add Stun dummy
-scoreboard objectives add Frost dummy
+scoreboard objectives add Frosted dummy
 scoreboard objectives add Airborne dummy
 scoreboard objectives add Root dummy
 

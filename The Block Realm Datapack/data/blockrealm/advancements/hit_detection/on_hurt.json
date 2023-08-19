@@ -6,8 +6,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "type": "minecraft:fireball",
-                            "nbt": "{projectileId:1b}"
+                            "type": "minecraft:fireball"
                         }
                     }
                 }

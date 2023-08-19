@@ -7,7 +7,7 @@ execute if score @s Shield matches 0 run scoreboard players operation @s Health 
 execute if score @s Shield matches 1.. run scoreboard players operation @s Shield -= @s PiDamage
 
 #shield took too much damage
-###execute if score @s Shield matches ..-1 run scoreboard players operation @s Health += @s Shield
+##execute if score @s Shield matches ..-1 run scoreboard players operation @s Health += @s Shield
 
 #indicator
 execute at @s run function blockrealm:entity/stats/entity/damage/piercing/indicator

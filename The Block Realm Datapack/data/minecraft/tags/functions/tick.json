@@ -1,7 +1,5 @@
 {
   "values":[
-    "blockrealm:main",
-    "slowcast:zprivate/main",
-    "demo:main"
+    "blockrealm:main"
   ]
 }

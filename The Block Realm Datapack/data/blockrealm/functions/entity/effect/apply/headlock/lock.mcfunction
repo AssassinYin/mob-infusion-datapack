@@ -6,5 +6,3 @@ tp @e[tag=headlock,tag=new,sort=nearest] @s
 scoreboard players operation @e[tag=headlock,tag=new,sort=nearest] PlayerID = @s PlayerID
 tag @e[tag=headlock,tag=new,sort=nearest] remove new
 tag @s add headlock
-
-effect give @s minecraft:levitation 4096 255 true

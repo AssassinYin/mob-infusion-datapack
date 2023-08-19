@@ -1,12 +1,12 @@
 ### Initialize player stats
 
 #player identifier
-scoreboard players add total PlayerID 1
-scoreboard players operation @s PlayerID = total PlayerID
+scoreboard players add $total PlayerID 1
+scoreboard players operation @s PlayerID = $total PlayerID
 
 #base attribute
 attribute @s generic.attack_damage base set 0
-attribute @s generic.attack_speed base set 512
+attribute @s generic.attack_speed base set 1024
 attribute @s generic.max_health base set 256
 
 #effect
@@ -19,7 +19,7 @@ scoreboard players set @s AttackTimer -1
 #base stats
 scoreboard players set @s Health 0
 scoreboard players set @s MaxHealth 0
-scoreboard players set @s HealthBase 2000
+scoreboard players set @s HealthBase 200000
 scoreboard players set @s HRegBase 0
 
 scoreboard players set @s Energy 100

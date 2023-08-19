@@ -9,4 +9,6 @@ execute if score @s HEffectReg matches ..-1 run scoreboard players set @s HEffec
 #Regenerate base
 execute if score @s[type=player] Hunger matches 15.. run scoreboard players operation @s HRegeneration += @s HRegBase
 
+scoreboard players operation @s Health += @s HRegeneration
+
 scoreboard players set @s HRegeneration 0

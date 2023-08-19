@@ -1,5 +1,6 @@
 ### Add physical damage to health bar
 
+#calculate armor protection
 function blockrealm:entity/stats/entity/damage/physical/cal_armor_protection
 
 #doesn't have shield
@@ -7,8 +8,9 @@ execute if score @s Shield matches 0 run scoreboard players operation @s Health 
 
 #has shield
 execute if score @s Shield matches 1.. run scoreboard players operation @s Shield -= @s PhDamage
+
 #shield took too much damage
-###execute if score @s Shield matches ..-1 run scoreboard players operation @s Health += @s Shield
+##execute if score @s Shield matches ..-1 run scoreboard players operation @s Health += @s Shield
 
 #indicator
 execute at @s run function blockrealm:entity/stats/entity/damage/physical/indicator
