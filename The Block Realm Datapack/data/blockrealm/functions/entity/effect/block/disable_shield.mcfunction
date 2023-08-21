@@ -1,6 +1,10 @@
-### Disable shield effect: Reset shield to 0.
+### Disabled shield: Reset shield to 0.
 
+#effect
 scoreboard players set @s Shield 0
+
+#particle
 execute at @s run particle minecraft:block minecraft:light_gray_stained_glass ~ ~ ~ 0.25 0 0.25 0 30 force @a[distance=..24]
 
-scoreboard players remove @s DisableShield 1
+#timer
+scoreboard players remove @s DShieldTime 1

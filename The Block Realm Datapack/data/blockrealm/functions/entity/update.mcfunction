@@ -15,4 +15,4 @@ function blockrealm:entity/hit_detection/update
 #update all entity stats
 execute as @e[tag=initialized] run function blockrealm:entity/stats/entity/update
 
-#update death event
+#update events

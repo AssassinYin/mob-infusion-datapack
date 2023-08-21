@@ -1,1 +1,0 @@
-### Bleeding effect: Takes 50% more physical damage.

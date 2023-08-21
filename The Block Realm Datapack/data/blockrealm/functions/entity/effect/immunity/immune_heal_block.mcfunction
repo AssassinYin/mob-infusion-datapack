@@ -1,4 +1,7 @@
-### Immune heal block effect: Immune heal block
+### Immune Heal block: Immunity to Heal block effect in the duration.
 
-execute unless score @s HealBlock matches 0 run scoreboard players set @s HealBlock 0
-scoreboard players remove @s ImmuneHealBlock 1
+#effect
+execute unless score @s HeBlockTime matches 0 run scoreboard players set @s HeBlockTime 0
+
+#timer
+scoreboard players remove @s ImmuneHeBlockTime 1

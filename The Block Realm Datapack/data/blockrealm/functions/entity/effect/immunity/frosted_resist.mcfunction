@@ -1,4 +1,7 @@
-### Immune frost effect: Immune to frost
+### Frosted resistance: Resist Frosted effect in the duration.
 
-execute unless score @s Frosted matches 0 run scoreboard players set @s Frosted 0
-scoreboard players remove @s FrostedResist 1
+#effect
+execute unless score @s FrosTime matches 0 run scoreboard players set @s FrosTime 0
+
+#timer
+scoreboard players remove @s FrosResistTime 1

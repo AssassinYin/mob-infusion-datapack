@@ -1,10 +1,9 @@
-### Frosted effect: immobilized and locked motion
+### Frosted: Unable to use abilities, move, attack, or move camera.
 
 tag @s remove Frosted
 
-function blockrealm:entity/effect/apply/headlock/unlock
+function blockrealm:entity/effect/headlock/unlock
 
-attribute @s minecraft:generic.attack_damage modifier remove a-0-0-0-0
-attribute @s minecraft:generic.movement_speed modifier remove a-0-0-0-0
+attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-0
 
-scoreboard players set @s Frosted -1
+scoreboard players set @s FrosTime -1

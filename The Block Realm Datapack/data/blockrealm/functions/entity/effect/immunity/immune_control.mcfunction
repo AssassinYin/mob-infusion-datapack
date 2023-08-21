@@ -1,7 +1,12 @@
-### Immune control effect: Immune to silence, stun, frosted, and root
+### Immune control: Immunity to Silence, Root, Stun, Airborne, Frosted, and Paralyzed in the duration.
 
-execute unless score @s Silence matches 0 run scoreboard players set @s Silence 0
-execute unless score @s Stun matches 0 run scoreboard players set @s Stun 0
-execute unless score @s Frosted matches 0 run scoreboard players set @s Frosted 0
-execute unless score @s Root matches 0 run scoreboard players set @s Root 0
-scoreboard players remove @s ImmuneControl 1
+#effect
+execute unless score @s AirbTime matches 0 run scoreboard players set @s AirbTime 0
+execute unless score @s FrosTime matches 0 run scoreboard players set @s FrosTime 0
+execute unless score @s SileTime matches 0 run scoreboard players set @s SileTime 0
+execute unless score @s StunTime matches 0 run scoreboard players set @s StunTime 0
+execute unless score @s ParaTime matches 0 run scoreboard players set @s ParaTime 0
+execute unless score @s RootTime matches 0 run scoreboard players set @s RootTime 0
+
+#timer
+scoreboard players remove @s ImmuneControlTime 1

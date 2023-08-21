@@ -1,4 +1,7 @@
-### Immune fire effect: Immune to ignite
+### Fire resistance: Resist Ignited effect in the duration.
 
-execute unless score @s Ignited matches 0 run scoreboard players set @s Ignited 0
-scoreboard players remove @s FireResist 1
+#effect
+execute unless score @s IgniTime matches 0 run scoreboard players set @s IgniTime 0
+
+#timer
+scoreboard players remove @s FireResistTime 1

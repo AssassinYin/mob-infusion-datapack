@@ -1,4 +1,7 @@
-### Immune energy block effect: Immune energy block
+### Immune Energy block: Immunity to Energy Block effect in the duration.
 
-execute unless score @s EnergyBlock matches 0 run scoreboard players set @s EnergyBlock 0
-scoreboard players remove @s ImmuneEnergyBlock 1
+#effect
+execute unless score @s EnBlockTime matches 0 run scoreboard players set @s EnBlockTime 0
+
+#timer
+scoreboard players remove @s ImmuneEnBlockTime 1
