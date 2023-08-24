@@ -1,8 +1,8 @@
 ### initialize scoreboard and settings
 
 #initialize other functions
-function blockrealm:display/init
 function blockrealm:entity/init
+function blockrealm:display/init
 
 #build up necessarily blocks
 forceload add -8 -8 7 7

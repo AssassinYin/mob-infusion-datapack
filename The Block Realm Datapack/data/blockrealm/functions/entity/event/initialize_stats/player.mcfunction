@@ -1,5 +1,7 @@
 ### Initialize player excusive stats
 
+### TBC
+
 #player identifier
 scoreboard players add $total PlayerID 1
 scoreboard players operation @s PlayerID = $total PlayerID
@@ -12,7 +14,7 @@ attribute @s generic.max_health base set 256
 scoreboard players set @s Energy 100
 scoreboard players set @s MaxEnergy 0
 scoreboard players set @s EnergyBase 100
-scoreboard players set @s ERegBase 0
+scoreboard players set @s EnergyRegBase 0
 
 #effect
 effect give @s saturation 1 255 true

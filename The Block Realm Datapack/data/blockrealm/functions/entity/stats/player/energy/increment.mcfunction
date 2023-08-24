@@ -1,5 +1,5 @@
 ### Regeneration energy based on EEffectReg
 
-scoreboard players operation @s ERegeneration += @s EEffectReg
+scoreboard players operation @s EnergyRegeneration += @s EnergyEffectReg
 
-scoreboard players set @s EEffectReg 0
+scoreboard players set @s EnergyEffectReg 0

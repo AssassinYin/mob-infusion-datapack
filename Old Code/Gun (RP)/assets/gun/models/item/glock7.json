@@ -1,0 +1,10 @@
+{
+	"parent":"gun:item/glock",
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [19,-9,-25],
+			"translation":  [ 0.271, 17.652, -3.47 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		}
+	}
+}
