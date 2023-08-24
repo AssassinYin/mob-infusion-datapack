@@ -4,21 +4,23 @@
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
-                    "type": {
-                        "direct_entity": {
-                            "type": "minecraft:fireball"
-                        }
+                	"type": {
+            		    "direct_entity": {
+              				"type": "minecraft:fireball"
+            			}
+          			},
+                    "source_entity": {
+                        "nbt": "{Tags:[\"some_tag_hitter_has\"]}"
                     }
                 }
             }
-        }
-    },
+        },
         "target": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "type": "#entity_hit_matching:targets"
+                        "type": "#blockrealm:targets"
                     }
                 }
             }

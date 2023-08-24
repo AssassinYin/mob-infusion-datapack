@@ -1,0 +1,46 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:gun"
+    },
+    "ops": [
+      {
+        "source": "stats",
+        "target": "stats",
+        "op": "replace"
+      }
+    ]
+  },
+    {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "score": {
+          "name": ".ammo.count",
+          "objective": "stats"
+        }
+      },
+      {
+        "text": "/"
+      },
+      {
+        "score": {
+          "name": ".reload.mag",
+          "objective": "stats"
+        }
+      },
+      {
+        "text": " | "
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "ammo.reserve"
+        }
+      }
+    ]
+  }
+]

@@ -1,10 +1,5 @@
 ### Update entity stats every tick
 
-#update armor
-function blockrealm:entity/stats/entity/armor/armor
-function blockrealm:entity/stats/entity/armor/energy
-function blockrealm:entity/stats/entity/armor/health
-
 #update health regeneration
 function blockrealm:entity/stats/entity/health/regenerate
 

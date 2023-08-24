@@ -3,6 +3,9 @@
 #update all entity effect
 execute as @e[tag=initialized] run function blockrealm:entity/effect/update
 
+#update general stats
+execute as @e[tag=initialized] run function blockrealm:entity/stats/general_stats/update
+
 #player stats update
 execute as @a[tag=initialized] run function blockrealm:entity/stats/player/update
 

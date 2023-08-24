@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/ender_eye"
+  },
+  "overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "gun:item/ak47"},
+		{"predicate": {"custom_model_data":2}, "model": "gun:item/ak47_ironsights"},
+		{"predicate": {"custom_model_data":10100}, "model": "gun:item/glock"},
+		{"predicate": {"custom_model_data":10101}, "model": "gun:item/glock1"},
+		{"predicate": {"custom_model_data":10102}, "model": "gun:item/glock2"},
+		{"predicate": {"custom_model_data":10103}, "model": "gun:item/glock3"},
+		{"predicate": {"custom_model_data":10104}, "model": "gun:item/glock4"},
+		{"predicate": {"custom_model_data":10105}, "model": "gun:item/glock5"},
+		{"predicate": {"custom_model_data":10106}, "model": "gun:item/glock6"},
+
+		{"predicate": {"custom_model_data":10107}, "model": "gun:item/glock7"},
+
+		{"predicate": {"custom_model_data":10108}, "model": "gun:item/glock8"},
+		{"predicate": {"custom_model_data":10109}, "model": "gun:item/glock9"},
+		{"predicate": {"custom_model_data":10110}, "model": "gun:item/glock10"},
+		{"predicate": {"custom_model_data":10111}, "model": "gun:item/glock11"},
+		{"predicate": {"custom_model_data":10112}, "model": "gun:item/glock12"},
+		{"predicate": {"custom_model_data":10113}, "model": "gun:item/glock13"},
+
+		{"predicate": {"custom_model_data":10114}, "model": "gun:item/glock14"},
+		{"predicate": {"custom_model_data":10115}, "model": "gun:item/glock15"},
+		{"predicate": {"custom_model_data":10116}, "model": "gun:item/glock16"},
+		{"predicate": {"custom_model_data":10117}, "model": "gun:item/glock17"},
+		{"predicate": {"custom_model_data":10118}, "model": "gun:item/glock18"}
+	]
+}
