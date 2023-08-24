@@ -1,1 +1,1 @@
-# block-realm-datapack
+# mob-infusion-datapack
