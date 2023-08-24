@@ -1,1 +1,0 @@
-tellraw @s ["",{"text":"There\u2019s a book on the desk.\nSeems to be a ","color":"gray"},{"text":"tattered","color":"red"},{"text":" one.\nUnusual.\nAnyone who make this book must be tough to deal with.\n","color":"gray"},{"text":"[Read]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function boss_fight:passage/book"}}]

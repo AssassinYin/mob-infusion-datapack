@@ -1,1 +1,0 @@
-execute if score .sfx.shoot stats matches 1 at @s run playsound gun:shoot.glock master @a ~ ~ ~

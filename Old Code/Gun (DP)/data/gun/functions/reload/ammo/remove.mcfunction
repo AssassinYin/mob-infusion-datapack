@@ -1,1 +1,0 @@
-execute if score .ammo.type stats matches 1 run function gun:reload/ammo/remove_type1

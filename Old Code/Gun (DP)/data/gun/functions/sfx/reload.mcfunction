@@ -1,1 +1,0 @@
-execute if score .sfx.reload stats matches 1 at @s run playsound gun:reload.glock master @a ~ ~ ~

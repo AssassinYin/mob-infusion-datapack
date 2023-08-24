@@ -1,1 +1,0 @@
-scoreboard objectives add dropSword minecraft.dropped:minecraft.iron_sword

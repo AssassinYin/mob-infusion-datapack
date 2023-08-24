@@ -1,1 +1,0 @@
-execute as @a[scores={dropSword=1..}] at @s run function demo:throw

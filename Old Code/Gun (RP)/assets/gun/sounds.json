@@ -1,4 +1,0 @@
-{
-	"shoot.glock": {"sounds": ["gun:shoot/glock"]},
-	"reload.glock": {"sounds": ["gun:reload/glock"]}
-}

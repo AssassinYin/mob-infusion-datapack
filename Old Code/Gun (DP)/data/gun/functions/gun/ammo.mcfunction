@@ -1,1 +1,0 @@
-give @s structure_block{ammo:{type:1b}} 64
