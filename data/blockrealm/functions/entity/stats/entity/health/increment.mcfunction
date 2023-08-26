@@ -1,5 +1,5 @@
 ### Regeneration health based on HEffectReg
 
-scoreboard players operation @s HRegeneration += @s HEffectReg
+scoreboard players operation @s HealthRegeneration += @s HealthEffectReg
 
-scoreboard players set @s HEffectReg 0
+scoreboard players set @s HealthEffectReg 0

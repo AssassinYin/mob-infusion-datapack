@@ -71,7 +71,7 @@ gamerule waterSourceConversion false
 
 #consts
 scoreboard objectives add Const dummy
-
+scoreboard players set 1000000 Const 1000000
 scoreboard players set 100000 Const 100000
 scoreboard players set 90000 Const 90000
 scoreboard players set 80000 Const 80000
