@@ -17,11 +17,32 @@ scoreboard objectives add PlayerID dummy
 #system settings
 scoreboard objectives add System dummy
 
-#set difficulty
-scoreboard players set $Difficulty System 0
-
-#marked system as initialized
-scoreboard players set $Initialized System 1
+#.difficulty: 0-3
+scoreboard players set .difficulty System 0
+#.teamMaximum: 2-8
+scoreboard players set .teamMaximum System 0
+#.teamMinimum: 2-8
+scoreboard players set .teamMinimum System 0
+#.maximumPlayerPerTeam: 2-8
+scoreboard players set .maximumPlayerPerTeam System 0
+#.minimumPlayerPerTeam: 1-8
+scoreboard players set .minimumPlayerPerTeam System 0
+#.scoreMaximum: positive integer
+scoreboard players set .scoreMaximum System 0
+#.respawnTime: positive integer
+scoreboard players set .respawnTime System 0
+#.neverRespawn: bool
+scoreboard players set .neverRespawn System 0
+#.canSwitchClass: bool
+scoreboard players set .canSwitchClass System 0
+#.respawnOnWill: bool
+scoreboard players set .respawnOnWill System 0
+#.respawnWithTeammate: bool
+scoreboard players set .respawnWithTeammate System 0
+#.respawnAtRandomPlace: bool
+scoreboard players set .respawnAtRandomPlace System 0
+#.isRevivable: bool
+scoreboard players set .isRevivable System 0
 
 #set gamerules
 gamerule announceAdvancements true
@@ -126,3 +147,6 @@ scoreboard players set -1 Const -1
 scoreboard players set 2500 Const 2500
 scoreboard players set 33 Const 33
 scoreboard players set 25 Const 25
+
+#marked system as initialized
+scoreboard players set $initialized System 1

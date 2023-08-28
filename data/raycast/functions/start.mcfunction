@@ -1,5 +1,12 @@
+#base attribute
+#particle function
+#damage function
+
 #distance = iteration * 0.25 blocks
 scoreboard players set %iteration raycast 40
+scoreboard players set %pierce raycast 40
+
+#special settings
 scoreboard players set %bounceTriggerTime raycast 4
 scoreboard players set %chainTriggerTime raycast 4
 

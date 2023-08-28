@@ -4,15 +4,15 @@
 function blockrealm:display/bossbar/value/cal_value
 
 #display stats
-execute if score @s bossbar matches 1 run function blockrealm:display/bossbar/value/health_bars/01
-execute if score @s bossbar matches 2 run function blockrealm:display/bossbar/value/health_bars/02
-execute if score @s bossbar matches 3 run function blockrealm:display/bossbar/value/health_bars/03
-execute if score @s bossbar matches 4 run function blockrealm:display/bossbar/value/health_bars/04
-execute if score @s bossbar matches 5 run function blockrealm:display/bossbar/value/health_bars/05
-execute if score @s bossbar matches 6 run function blockrealm:display/bossbar/value/health_bars/06
-execute if score @s bossbar matches 7 run function blockrealm:display/bossbar/value/health_bars/07
-execute if score @s bossbar matches 8 run function blockrealm:display/bossbar/value/health_bars/08
-execute if score @s bossbar matches 9 run function blockrealm:display/bossbar/value/health_bars/09
+execute if score @s bossbar matches 1 run function blockrealm:display/bossbar/value/health_bars/1
+execute if score @s bossbar matches 2 run function blockrealm:display/bossbar/value/health_bars/2
+execute if score @s bossbar matches 3 run function blockrealm:display/bossbar/value/health_bars/3
+execute if score @s bossbar matches 4 run function blockrealm:display/bossbar/value/health_bars/4
+execute if score @s bossbar matches 5 run function blockrealm:display/bossbar/value/health_bars/5
+execute if score @s bossbar matches 6 run function blockrealm:display/bossbar/value/health_bars/6
+execute if score @s bossbar matches 7 run function blockrealm:display/bossbar/value/health_bars/7
+execute if score @s bossbar matches 8 run function blockrealm:display/bossbar/value/health_bars/8
+execute if score @s bossbar matches 9 run function blockrealm:display/bossbar/value/health_bars/9
 execute if score @s bossbar matches 10 run function blockrealm:display/bossbar/value/health_bars/10
 execute if score @s bossbar matches 11 run function blockrealm:display/bossbar/value/health_bars/11
 execute if score @s bossbar matches 12 run function blockrealm:display/bossbar/value/health_bars/12
