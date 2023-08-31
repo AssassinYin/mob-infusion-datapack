@@ -1,23 +1,9 @@
 ### Initialize entity general stats
 
-#player base stats, affact damage player dealt
-scoreboard players set @s AttackDamageBase 0
-#player base stats, affact the time when attack timer reset
-scoreboard players set @s AttackSpeedBase 0
-#entity base stats, used to store an entity's base health value
-scoreboard players set @s HealthBase 200000
-#entity base stats, used to store how many health an entity naturally can regenerate
-scoreboard players set @s HRegBase 0
-#item stats, used to store an entity's base energy values
-scoreboard players set @s EnergyBase 0
-#item stats, used to store how many energy an entity naturally can regenerate
-scoreboard players set @s ERegBase 0
-#entity stats, used to store an entity's armor point
+scoreboard players set @s HealthBase 0
+scoreboard players set @s HealthRegBase 0
 scoreboard players set @s Armor 0
-#entity stats, used to store an entity's armor toughness point
 scoreboard players set @s ArmorToughness 0
-
-scoreboard players set @s AttackTimer 0
 
 #control effects
 scoreboard players set @s AirbTime -1
@@ -142,5 +128,7 @@ scoreboard players set @s ArmorEnergy1 0
 scoreboard players set @s ArmorEnergy2 0
 scoreboard players set @s ArmorEnergy3 0
 scoreboard players set @s ArmorEnergy4 0
+
+execute if entity @s[type=player] run function blockrealm:entity/event/initialize_stats/player
 
 tag @s add initialized

@@ -1,3 +1,20 @@
+#used to store an entity's taken damage
+scoreboard objectives add MaDamage dummy "Magic Damage currently taken * 10000"
+scoreboard objectives add PhDamage dummy "Physical Damage currently taken * 10000"
+scoreboard objectives add PiDamage dummy "Piercing Damage currently taken * 10000"
+#used to store an entity's Magic damage indicator display value
+scoreboard objectives add MaDamageDisplay dummy
+#value after dot
+scoreboard objectives add DotMaDamageDisplay dummy
+#used to store an entity's physical damage indicator display value
+scoreboard objectives add PhDamageDisplay dummy
+#value after dot
+scoreboard objectives add DotPhDamageDisplay dummy
+#used to store an entity's piercing damage indicator display value
+scoreboard objectives add PiDamageDisplay dummy
+#value after dot
+scoreboard objectives add DotPiDamageDisplay dummy
+
 #used to store how many extra attack damage a player get from non-armor in currently tick
 scoreboard objectives add AttackDamageEffect dummy "Current Attack Damage Stats * 10000"
 #used to store how many extra attack speed a player get from non-armor in currently tick
@@ -36,11 +53,11 @@ scoreboard objectives add AttackSpeedBase dummy "Base Attack Speed Stats * 10000
 #entity base stats, used to store an entity's base health value
 scoreboard objectives add HealthBase dummy "Base Health Value * 10000"
 #entity base stats, used to store how many health an entity naturally can regenerate
-scoreboard objectives add HRegBase dummy "Base Health Regenerate Value"
+scoreboard objectives add HealthRegBase dummy "Base Health Regenerate Value"
 #item stats, used to store an entity's base energy values
 scoreboard objectives add EnergyBase dummy "Base Energy Value"
 #item stats, used to store how many energy an entity naturally can regenerate
-scoreboard objectives add ERegBase dummy "Base Energy Regenerate Value"
+scoreboard objectives add EnergyRegBase dummy "Base Energy Regenerate Value"
 #entity stats, used to store an entity's armor point
 scoreboard objectives add Armor dummy "Current Armor Value * 10000"
 #entity stats, used to store an entity's armor toughness point
@@ -51,6 +68,10 @@ scoreboard objectives add ArmorHealth1 dummy "Helmet Health Increament"
 scoreboard objectives add ArmorHealth2 dummy "Chestplate Health Increament"
 scoreboard objectives add ArmorHealth3 dummy "Leggings Health Increament"
 scoreboard objectives add ArmorHealth4 dummy "Boots Health Increament"
+scoreboard objectives add ArmorEnergy1 dummy "Helmet Energy Increament"
+scoreboard objectives add ArmorEnergy2 dummy "Chestplate Energy Increament"
+scoreboard objectives add ArmorEnergy3 dummy "Leggings Energy Increament"
+scoreboard objectives add ArmorEnergy4 dummy "Boots Energy Increament"
 scoreboard objectives add ArmorAttackDamage1 dummy "Helmet Attack Damage Increament"
 scoreboard objectives add ArmorAttackDamage2 dummy "Chestplate Attack Damage Increament"
 scoreboard objectives add ArmorAttackDamage3 dummy "Leggings Attack Damage Increament"
@@ -59,7 +80,3 @@ scoreboard objectives add ArmorAttackSpeed1 dummy "Helmet Attack Speed Increamen
 scoreboard objectives add ArmorAttackSpeed2 dummy "Chestplate Attack Speed Increament"
 scoreboard objectives add ArmorAttackSpeed3 dummy "Leggings Attack Speed Increament"
 scoreboard objectives add ArmorAttackSpeed4 dummy "Boots Attack Speed Increament"
-scoreboard objectives add ArmorEnergy1 dummy "Helmet Energy Increament"
-scoreboard objectives add ArmorEnergy2 dummy "Chestplate Energy Increament"
-scoreboard objectives add ArmorEnergy3 dummy "Leggings Energy Increament"
-scoreboard objectives add ArmorEnergy4 dummy "Boots Energy Increament"

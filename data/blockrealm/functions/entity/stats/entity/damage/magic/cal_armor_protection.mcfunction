@@ -46,9 +46,9 @@
 ### scoreboard players operation @s PhDamage *= #temp1 calProtection
 ### scoreboard players operation @s PhDamage /= 1000 Const
 
-scoreboard players operation %calProtection temp = @s Armor
-scoreboard players operation %calProtection temp *= 4 Const
-scoreboard players operation %calProtection temp -= 1000000 Const
-scoreboard players operation %calProtection temp *= -1 Const
-scoreboard players operation @s MaDamage *= %calProtection temp
+scoreboard players operation #temp Const = @s Armor
+scoreboard players operation #temp Const *= 4 Const
+scoreboard players operation #temp Const -= 1000000 Const
+scoreboard players operation #temp Const *= -1 Const
+scoreboard players operation @s MaDamage *= #temp Const
 scoreboard players operation @s MaDamage /= 1000000 Const

@@ -1,4 +1,9 @@
 ### initialize scoreboard and settings
+# '&' for special
+# '.' for gamerules
+# '$' for stats
+# '%' for macro arugments
+# '#' for temporary arugments
 
 #initialize other functions
 function blockrealm:entity/init
@@ -8,10 +13,10 @@ function blockrealm:display/init
 forceload add -8 -8 7 7
 setworldspawn 0 64 0 0
 setblock 0 -64 0 oak_sign replace
-setblock 0 63 0 bedrock replace
+setblock 0 -63 0 shulker_box replace
+setblock 0 127 0 bedrock replace
 
 scoreboard objectives add temp dummy
-
 scoreboard objectives add PlayerID dummy
 
 #system settings
@@ -27,12 +32,18 @@ scoreboard players set .teamMinimum System 0
 scoreboard players set .maximumPlayerPerTeam System 0
 #.minimumPlayerPerTeam: 1-8
 scoreboard players set .minimumPlayerPerTeam System 0
-#.scoreMaximum: positive integer
-scoreboard players set .scoreMaximum System 0
-#.respawnTime: positive integer
-scoreboard players set .respawnTime System 0
+#.earlyGameTime: positive integer
+scoreboard players set .earlyGameTime System 0
+#.midGameTime: positive integer
+scoreboard players set .midGameTime System 0
+#.endGameTime: positive integer
+scoreboard players set .endGameTime System 0
+#.scoreGoal: positive integer
+scoreboard players set .scoreGoal System 0
 #.neverRespawn: bool
 scoreboard players set .neverRespawn System 0
+#.respawnTime: positive integer
+scoreboard players set .respawnTime System 0
 #.canSwitchClass: bool
 scoreboard players set .canSwitchClass System 0
 #.respawnOnWill: bool
@@ -43,8 +54,10 @@ scoreboard players set .respawnWithTeammate System 0
 scoreboard players set .respawnAtRandomPlace System 0
 #.isRevivable: bool
 scoreboard players set .isRevivable System 0
+#.reviveTime: positive integer
+scoreboard players set .reviveTime System 0
 
-#set gamerules
+#set vanilla gamerules
 gamerule announceAdvancements true
 gamerule blockExplosionDropDecay false
 gamerule commandBlockOutput false
@@ -149,4 +162,4 @@ scoreboard players set 33 Const 33
 scoreboard players set 25 Const 25
 
 #marked system as initialized
-scoreboard players set $initialized System 1
+scoreboard players set &initialized System 1

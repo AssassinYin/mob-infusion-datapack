@@ -6,7 +6,7 @@ execute if score @s HealthEffectReg matches 1.. run function blockrealm:entity/s
 #if value overflow
 execute if score @s HealthEffectReg matches ..-1 run scoreboard players set @s HEffectReg 0
 
-#Regenerate base
+#regenerate base
 execute if score @s[type=player] Hunger matches 15.. run scoreboard players operation @s HealthRegeneration += @s HealthRegBase
 
 scoreboard players operation @s Health += @s HealthRegeneration
