@@ -1,4 +1,7 @@
-### Reset executor's stats
+### Reset executor's stats ###
+# executor: entity to be initialized
+# arguments: none
+### TBC
 
 scoreboard players set @s AttackSpeed 0
 scoreboard players set @s AttackTimer -1

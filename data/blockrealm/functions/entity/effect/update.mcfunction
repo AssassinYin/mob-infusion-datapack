@@ -42,6 +42,7 @@ execute if data entity @s {ActiveEffects:[{Id:22}]} run function blockrealm:enti
 effect give @s instant_health 1 255 true
 #7 Instant Damage
 #11 Resistance
+effect give @s resistance 1 255 true
 #12 Fire Resistance
 #18 Weakness
 execute if data entity @s {ActiveEffects:[{Id:18}]} run effect clear @s weakness

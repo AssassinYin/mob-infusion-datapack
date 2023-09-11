@@ -13,4 +13,4 @@ execute if score .type raycast matches 1 if score .y raycast matches ..55 run sc
 ## if top slab, stop raycast if inside top part
 execute if score .type raycast matches 0 if score .y raycast matches 45.. run scoreboard players set #bool raycast 1
 
-execute if score #bool raycast matches 1 run function z
+execute if score #bool raycast matches 1 run function raycast:if_should_bounce

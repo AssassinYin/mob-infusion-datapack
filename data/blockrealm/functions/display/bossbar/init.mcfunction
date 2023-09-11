@@ -1,3 +1,7 @@
+### initialize needed scoreboard and bossbar for bossbar systems ###
+# executor: the server side
+# arguments: none
+
 scoreboard objectives add bossbar dummy
 scoreboard objectives add left minecraft.custom:minecraft.leave_game
 

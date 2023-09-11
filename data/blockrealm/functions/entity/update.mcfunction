@@ -1,21 +1,17 @@
-### Update player & entity value every tick
+### Update all entities value every tick ###
+# executor: the server side
+# arguments: none
 
-#update all entity effect
-execute as @e[tag=initialized] run function blockrealm:entity/effect/update
+#update projectile stats
+execute as @e[tag=projectile] run function blockrealm:entity/projectile/update
 
-#update general stats
-execute as @e[tag=initialized] run function blockrealm:entity/stats/general_stats/update
+#update entity effect
+execute as @e[tag=entity] run function blockrealm:entity/effect/update
 
-#player stats update
-execute as @a[tag=initialized] run function blockrealm:entity/stats/player/update
+#update player action
+execute as @a[tag=player] run function blockrealm:entity/action/update
 
-#right click detection
-function blockrealm:entity/right_click_detection/update
-
-#hit detection
-function blockrealm:entity/hit_detection/update
-
-#update all entity stats
-execute as @e[tag=initialized] run function blockrealm:entity/stats/entity/update
+#update entity stats
+execute as @e[tag=entity] run function blockrealm:entity/stats/update
 
 #update events
