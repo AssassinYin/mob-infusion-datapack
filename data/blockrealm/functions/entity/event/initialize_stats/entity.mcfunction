@@ -73,6 +73,7 @@ scoreboard players set @s WeaknAmp 0
 scoreboard players set @s MaDamage 0
 scoreboard players set @s PhDamage 0
 scoreboard players set @s PiDamage 0
+
 #used to store an entity's Magic damage indicator display value
 scoreboard players set @s MaDamageDisplay 0
 scoreboard players set @s DotMaDamageDisplay 0
@@ -80,14 +81,7 @@ scoreboard players set @s PhDamageDisplay 0
 scoreboard players set @s DotPhDamageDisplay 0
 scoreboard players set @s PiDamageDisplay 0
 scoreboard players set @s DotPiDamageDisplay 0
-#used to store how many extra attack damage a player get from non-armor in currently tick
-scoreboard players set @s AttackDamageEffect 0
-#used to store how many extra attack speed a player get from non-armor in currently tick
-scoreboard players set @s AttackSpeedEffect 0
-#used to store a player's current attack damage
-scoreboard players set @s AttackDamage 0
-#used to store a player's current attack speed
-scoreboard players set @s AttackSpeed 0
+
 #used to store an entity's current health
 scoreboard players set @s Health 200000
 #used to store an entity's current max health
@@ -98,14 +92,6 @@ scoreboard players set @s Hunger 0
 scoreboard players set @s HealthEffectReg 0
 #used to store how many health an entity regenerate in currently tick
 scoreboard players set @s HealthRegeneration 0
-#used to store an entity's current energy
-scoreboard players set @s Energy 0
-#used to store an entity's current max energy
-scoreboard players set @s MaxEnergy 0
-#used to store how many extra energy an entity get in currently tick
-scoreboard players set @s EnergyEffectReg 0
-#used to store how many energy an entity regenerate in currently tick
-scoreboard players set @s EnergyRegeneration 0
 #used to store an entity's current shield
 scoreboard players set @s Shield 0
 #used to store how many extra shield an entity get in currently tick
@@ -116,14 +102,6 @@ scoreboard players set @s ArmorHealth1 0
 scoreboard players set @s ArmorHealth2 0
 scoreboard players set @s ArmorHealth3 0
 scoreboard players set @s ArmorHealth4 0
-scoreboard players set @s ArmorAttackDamage1 0
-scoreboard players set @s ArmorAttackDamage2 0
-scoreboard players set @s ArmorAttackDamage3 0
-scoreboard players set @s ArmorAttackDamage4 0
-scoreboard players set @s ArmorAttackSpeed1 0
-scoreboard players set @s ArmorAttackSpeed2 0
-scoreboard players set @s ArmorAttackSpeed3 0
-scoreboard players set @s ArmorAttackSpeed4 0
 scoreboard players set @s ArmorEnergy1 0
 scoreboard players set @s ArmorEnergy2 0
 scoreboard players set @s ArmorEnergy3 0

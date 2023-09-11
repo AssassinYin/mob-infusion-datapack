@@ -132,4 +132,4 @@ scoreboard players operation @s entityid.31 %= 2 Const
 
 scoreboard players operation @s entityid = $highest entityid
 
-function blockrealm:entity/hit_detection/internal/assign_id1
+function blockrealm:entity/action/hit_detection/internal/assign_id1

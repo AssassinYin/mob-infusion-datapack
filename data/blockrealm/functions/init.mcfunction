@@ -38,6 +38,8 @@ scoreboard players set .earlyGameTime System 0
 scoreboard players set .midGameTime System 0
 #.endGameTime: positive integer
 scoreboard players set .endGameTime System 0
+#.scoreGainSpeed: positive integer
+scoreboard players set .scoreGainSpeed System 0
 #.scoreGoal: positive integer
 scoreboard players set .scoreGoal System 0
 #.neverRespawn: bool
@@ -52,6 +54,8 @@ scoreboard players set .respawnOnWill System 0
 scoreboard players set .respawnWithTeammate System 0
 #.respawnAtRandomPlace: bool
 scoreboard players set .respawnAtRandomPlace System 0
+#.naturalRegeneration: bool
+scoreboard players set .naturalRegeneration System 0
 #.isRevivable: bool
 scoreboard players set .isRevivable System 0
 #.reviveTime: positive integer
@@ -70,7 +74,8 @@ gamerule doFireTick false
 gamerule doImmediateRespawn true
 gamerule doInsomnia false
 gamerule doLimitedCrafting true
-gamerule doMobLoot true
+#!!!
+gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
 gamerule doTileDrops false

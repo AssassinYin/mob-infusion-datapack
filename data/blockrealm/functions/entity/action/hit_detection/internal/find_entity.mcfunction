@@ -31,4 +31,4 @@ execute if entity @s[advancements={blockrealm:hit_detection/on_hit={bit28=true}}
 execute if entity @s[advancements={blockrealm:hit_detection/on_hit={bit29=true}}] run scoreboard players add $hit entityid 536870912
 execute if entity @s[advancements={blockrealm:hit_detection/on_hit={bit30=true}}] run scoreboard players add $hit entityid 1073741824
 execute if entity @s[advancements={blockrealm:hit_detection/on_hit={bit31=true}}] run scoreboard players operation $hit entityid *= -1 Const
-execute as @e if score @s entityid = $hit entityid run function blockrealm:entity/hit_detection/execute/on_hit
+execute as @e if score @s entityid = $hit entityid run function blockrealm:entity/action/hit_detection/execute/on_hit
