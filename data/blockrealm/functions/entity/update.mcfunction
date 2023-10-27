@@ -1,6 +1,6 @@
 ### Update all entities value every tick ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 #update projectile stats
 execute as @e[tag=projectile] run function blockrealm:entity/projectile/update
