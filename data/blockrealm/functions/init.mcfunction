@@ -2,7 +2,7 @@
 # executor: the server side
 # macro: none
 
-# '&' for special
+# '&' for inner arugments
 # '.' for gamerules
 # '$' for stats
 # '%' for macro arugments
