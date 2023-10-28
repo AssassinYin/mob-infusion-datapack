@@ -1,3 +1,7 @@
+### Initialize all effect related resource ###
+# executor: the server side
+# macro: none
+
 #used to store an entity's current effects time and amplifier
 
 #control effects

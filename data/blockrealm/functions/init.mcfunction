@@ -1,6 +1,6 @@
-### initialize scoreboard and settings ###
+### Initialize all source ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 # '&' for special
 # '.' for gamerules

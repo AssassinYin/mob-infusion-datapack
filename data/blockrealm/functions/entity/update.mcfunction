@@ -1,8 +1,8 @@
-### Update all entities value every tick ###
+### Update all entities' value every tick ###
 # executor: the server side
 # macro: none
 
-#update projectile stats
+#check projectile
 execute as @e[tag=projectile] run function blockrealm:entity/projectile/update
 
 #update entity effect
@@ -14,4 +14,4 @@ execute as @a[tag=player] run function blockrealm:entity/action/update
 #update entity stats
 execute as @e[tag=entity] run function blockrealm:entity/stats/update
 
-#update events
+#check entity events

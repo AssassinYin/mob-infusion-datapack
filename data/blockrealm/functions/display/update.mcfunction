@@ -1,6 +1,6 @@
 ###  ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 function blockrealm:display/bossbar/update
 function blockrealm:display/name/update

@@ -1,6 +1,6 @@
 ### Assign bossbar id to player ###
 # executor: player to assign the bossbar id
-# arguments: none
+# macro: none
 
 #finding id between 1..16
 scoreboard players add .id bossbar 1

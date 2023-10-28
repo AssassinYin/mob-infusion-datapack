@@ -1,6 +1,6 @@
 ###  ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 function blockrealm:display/bossbar/value/cal_value
 data merge block 0 -64 0 {front_text:{messages:['[{"score":{"name":"@s","objective":"MaxHealthDisplay"}},{"text":"/"},{"score":{"name":"@s","objective":"HealthDisplay"}}]','{"text":""}','{"text":""}','{"text":""}']}}

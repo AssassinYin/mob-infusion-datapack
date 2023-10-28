@@ -1,4 +1,6 @@
-### Affect entity by effect and update effect timer every tick
+### Update entity's effect value every tick ###
+# executor: entity to be updated
+# macro: none
 
 #update vanilla effects
 
@@ -23,8 +25,6 @@ execute if data entity @s {ActiveEffects:[{Id:22}]} run function blockrealm:enti
 #23 Saturation
 #24 Glowing
 #28 Slow Falling
-#29 Conduit Power
-#30 Dolphin's Grace
 #33 Darkness
 
 #used in custom effects

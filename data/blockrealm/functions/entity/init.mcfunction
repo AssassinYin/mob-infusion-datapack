@@ -1,6 +1,6 @@
 ### Initialize all entities related resource ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 function blockrealm:entity/effect/init
 function blockrealm:entity/stats/init

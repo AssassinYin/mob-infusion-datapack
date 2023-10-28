@@ -1,6 +1,6 @@
 ### Copy value to bossbar ###
 # executor: player to update the bossbar informations
-# arguments: $bid
+# macro: $bid
 
 #calculate display stats
 function blockrealm:display/bossbar/value/cal_value

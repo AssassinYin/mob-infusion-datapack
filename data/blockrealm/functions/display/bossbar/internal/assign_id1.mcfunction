@@ -1,6 +1,6 @@
 ### Assign bossbar id to player ###
 # executor: player to assign the bossbar id
-# arguments: $bid
+# macro: $bid
 
 scoreboard players operation @s bossbar = .id bossbar
 

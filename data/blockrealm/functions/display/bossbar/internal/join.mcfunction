@@ -1,6 +1,6 @@
 ### Initialize player joined server ###
 # executor: player just joined server
-# arguments: none
+# macro: none
 
 scoreboard players reset @s left
 tag @s add user

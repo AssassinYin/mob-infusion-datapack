@@ -1,6 +1,6 @@
 ### Calculate stats for display ###
 # executor: player to calculate the stats
-# arguments: none
+# macro: none
 
 #health
 scoreboard players operation @s HealthDisplay = @s Health

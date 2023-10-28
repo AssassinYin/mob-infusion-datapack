@@ -1,4 +1,4 @@
 ###  ###
 # executor: the server side
-# arguments: none
+# macro: none
 

@@ -1,6 +1,6 @@
 ###  ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 #right click detection
 function blockrealm:entity/action/right_click_detection/update

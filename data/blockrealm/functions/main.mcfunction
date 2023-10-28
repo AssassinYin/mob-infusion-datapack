@@ -1,6 +1,6 @@
 ### Update the world every tick ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 #display
 function blockrealm:display/update
@@ -11,7 +11,7 @@ function blockrealm:entity/update
 #Progression
 #Completed:
 
-#TBC:
+#In progression:
 #Bossbar Display System
 #Effect Entity System
 #Event Entity System

@@ -1,6 +1,6 @@
 ### update all player's bossbar informations ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 #assign id
 execute as @a[tag=!user] run function blockrealm:display/bossbar/internal/join

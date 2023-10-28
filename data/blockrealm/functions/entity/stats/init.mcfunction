@@ -1,6 +1,6 @@
-###  ###
+### Initialize all stats related source ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 #used to store an entity's taken damage
 scoreboard objectives add MaDamage dummy "Magic Damage currently taken * 10000"

@@ -1,6 +1,6 @@
 ### Update projectile behavior every tick ###
 # executor: the projectile
-# arguments: none
+# macro: none
 
 #for display bug
 data modify entity @s Age set value -32768

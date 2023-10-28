@@ -1,6 +1,6 @@
 ### Display bossbar ###
 # executor: player to display the bossbar
-# arguments: $bid
+# macro: $bid
 
 #health
 $execute store result bossbar minecraft:bossbar$(id) max run scoreboard players get @s MaxHealth

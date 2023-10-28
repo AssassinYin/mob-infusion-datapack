@@ -1,6 +1,6 @@
-### Initialize needed scoreboard and bossbar for bossbar systems ###
+### Initialize all display related resource ###
 # executor: the server side
-# arguments: none
+# macro: none
 
 function blockrealm:display/bossbar/init
 function blockrealm:display/name/init
