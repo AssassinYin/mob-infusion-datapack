@@ -1,5 +1,5 @@
 ### Update player stats every tick ###
-# executor: the server side
+# executor: the player to be updated
 # macro: none
 
 #update ability recharge bar

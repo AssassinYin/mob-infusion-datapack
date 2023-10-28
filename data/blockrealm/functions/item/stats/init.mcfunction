@@ -8,6 +8,8 @@ scoreboard objectives add ItemDamageType dummy
 scoreboard objectives add ItemAttackDamage dummy
 # Attack speed: X*(attack speed) time per sec
 scoreboard objectives add ItemAttackSpeed dummy
+# Current Stamina a player have
+scoreboard objectives add ItemCurrentStamina dummy
 
 # Arrow pierce: X
 scoreboard objectives add ItemArrowPierce dummy

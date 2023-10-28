@@ -1,6 +1,3 @@
-#timer between each melee attack swing
-scoreboard objectives add AttackTimer dummy
-
 #hit detection
 scoreboard objectives add entityid dummy
 
