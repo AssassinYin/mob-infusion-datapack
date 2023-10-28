@@ -2,7 +2,7 @@
 # executor: player just joined server
 # macro: none
 
-scoreboard players reset @s left
 tag @s add user
+scoreboard players reset @s left
 
 function blockrealm:display/bossbar/internal/assign_id
