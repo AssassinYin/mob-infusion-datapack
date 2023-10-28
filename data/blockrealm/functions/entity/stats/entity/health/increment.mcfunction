@@ -1,4 +1,6 @@
-### Regeneration health based on HEffectReg
+### Regeneration health based on HealthEffectReg ###
+# executor: the entity to be regenerating health
+# macro: none
 
 scoreboard players operation @s HealthRegeneration += @s HealthEffectReg
 

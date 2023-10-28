@@ -1,6 +1,9 @@
 ### Update entity stats every tick ###
-# executor: entity
-# arguments: none
+# executor: the entity to be updated
+# macro: none
+
+#update energy regeneration
+function blockrealm:entity/stats/entity/energy/regenerate
 
 #update health regeneration
 function blockrealm:entity/stats/entity/health/regenerate

@@ -1,4 +1,7 @@
-### !!!
+### Display inflicted piercing damage ###
+# executor: the entity taken damage
+# macro: none
+
 scoreboard players operation @s PiDamageDisplay = @s PhDamage
 scoreboard players operation @s PiDamageDisplay /= 10000 Const
 scoreboard players operation @s DotPiDamageDisplay = @s PhDamage

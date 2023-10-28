@@ -1,4 +1,6 @@
-### Add Magic damage to health bar
+### Add magic damage to health bar ###
+# executor: the entity to be updated
+# macro: none
 
 #calculate armor protection
 execute if score @s Shield matches 0 run function blockrealm:entity/stats/entity/damage/magic/cal_armor_protection

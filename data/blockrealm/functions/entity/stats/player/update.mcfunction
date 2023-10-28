@@ -1,4 +1,6 @@
-### Update player stats every tick
+### Update player stats every tick ###
+# executor: the server side
+# macro: none
 
 #update ability recharge bar
 function blockrealm:entity/stats/player/ability/update
@@ -8,6 +10,3 @@ function blockrealm:entity/stats/player/attack/update
 
 #update quiver bar
 function blockrealm:entity/stats/player/quiver/update
-
-#update energy regeneration
-function blockrealm:entity/stats/player/energy/regenerate

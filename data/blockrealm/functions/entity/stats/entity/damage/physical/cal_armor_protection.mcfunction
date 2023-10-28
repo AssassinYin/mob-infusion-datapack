@@ -1,4 +1,6 @@
-### Calculate armor protection and decrease damage
+### Calculate armor protection and decrease damage ###
+# executor: the entity to be updated
+# macro: none
 
 ### #fetch armor stats
 ### scoreboard players operation #temparmor calProtection = @s Armor

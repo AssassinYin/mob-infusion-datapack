@@ -6,7 +6,7 @@
 # '.' for gamerules
 # '$' for stats
 # '%' for macro arugments
-# '#' for temporary arugments
+# '#' for special arugments
 
 #initialize other functions
 function blockrealm:entity/init
@@ -25,6 +25,11 @@ scoreboard objectives add PlayerID dummy
 #system settings
 scoreboard objectives add System dummy
 
+#bool for read
+scoreboard players set #FALSE System 0
+scoreboard players set #TRUE System 1
+#.isDebug: bool
+scoreboard players set .isDebug System 1
 #.difficulty: 0-3
 scoreboard players set .difficulty System 0
 #.teamMaximum: 2-8

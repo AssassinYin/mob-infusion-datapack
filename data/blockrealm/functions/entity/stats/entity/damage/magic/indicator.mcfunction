@@ -1,4 +1,7 @@
-### !!!
+### Display inflicted magic damage ###
+# executor: the entity taken damage
+# macro: none
+
 scoreboard players operation @s MaDamageDisplay = @s MaDamage
 scoreboard players operation @s MaDamageDisplay /= 10000 Const
 scoreboard players operation @s DotMaDamageDisplay = @s MaDamage

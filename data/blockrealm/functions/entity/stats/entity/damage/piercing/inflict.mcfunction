@@ -1,4 +1,6 @@
-### Add piercing damage to health bar
+### Add piercing damage to health bar ###
+# executor: the entity to be updated
+# macro: none
 
 #doesn't have shield
 execute if score @s Shield matches 0 run scoreboard players operation @s Health -= @s PiDamage

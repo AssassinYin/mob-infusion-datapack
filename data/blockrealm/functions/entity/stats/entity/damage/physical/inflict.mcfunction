@@ -1,4 +1,6 @@
-### Add physical damage to health bar
+### Add physical damage to health bar ###
+# executor: the entity to be updated
+# macro: none
 
 #calculate armor protection
 function blockrealm:entity/stats/entity/damage/physical/cal_armor_protection

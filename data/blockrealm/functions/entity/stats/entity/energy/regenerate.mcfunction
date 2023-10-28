@@ -1,7 +1,9 @@
-### Regeneration energy for entities currently can
+### Regenerate energy for entities currently can ###
+# executor: the entity to be regenerating energy
+# macro: none
 
 #increase energy
-execute if score @s EnergyEffectReg matches 1.. run function blockrealm:entity/stats/player/energy/increment
+execute if score @s EnergyEffectReg matches 1.. run function blockrealm:entity/stats/entity/energy/increment
 
 #if value overflow
 execute if score @s EnergyEffectReg matches ..-1 run scoreboard players set @s EnergyEffectReg 0

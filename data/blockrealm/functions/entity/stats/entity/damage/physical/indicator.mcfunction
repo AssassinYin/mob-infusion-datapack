@@ -1,4 +1,7 @@
-### !!!
+### Display inflicted physical damage ###
+# executor: the entity taken damage
+# macro: none
+
 scoreboard players operation @s PhDamageDisplay = @s PhDamage
 scoreboard players operation @s PhDamageDisplay /= 10000 Const
 scoreboard players operation @s DotPhDamageDisplay = @s PhDamage

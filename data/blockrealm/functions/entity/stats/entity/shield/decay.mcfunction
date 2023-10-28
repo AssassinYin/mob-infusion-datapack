@@ -1,4 +1,6 @@
-### Update shield value
+### Update shield value ###
+# executor: the entity to be updated
+# macro: none
 
 #decay 0.5 shield every sec
 execute if score @s Shield matches 1.. run scoreboard players remove @s Shield 25
