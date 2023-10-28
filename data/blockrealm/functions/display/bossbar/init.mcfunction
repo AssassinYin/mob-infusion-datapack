@@ -1,4 +1,4 @@
-### initialize needed scoreboard and bossbar for bossbar systems ###
+### Initialize needed scoreboard and bossbar for bossbar systems ###
 # executor: the server side
 # macro: none
 

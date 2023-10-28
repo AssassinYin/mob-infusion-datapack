@@ -1,4 +1,4 @@
-### update all player's bossbar informations ###
+### Update all player's bossbar informations ###
 # executor: the server side
 # macro: none
 
