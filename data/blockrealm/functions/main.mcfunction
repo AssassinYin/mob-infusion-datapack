@@ -29,6 +29,3 @@ function blockrealm:entity/update
 #Scoreboard Display System
 #Title Display System
 #Item System
-
-#Hit Detection
-#Right Detection
