@@ -8,9 +8,8 @@
 # '%' for macro arugments
 # '#' for special arugments
 
-#initialize other functions
-function blockrealm:entity/init
 function blockrealm:display/init
+function blockrealm:entity/init
 
 #build up necessarily blocks
 forceload add -8 -8 7 7
