@@ -801,6 +801,6 @@
         ]
     ],
     "rewards": {
-        "function": "blockrealm:entity/hit_detection/execute/reward1"
+        "function": "blockrealm:entity/action/hit_detection/execute/reward1"
     }
 }

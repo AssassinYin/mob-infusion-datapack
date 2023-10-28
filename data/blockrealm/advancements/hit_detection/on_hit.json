@@ -1057,6 +1057,6 @@
         ]
     ],
     "rewards": {
-        "function": "blockrealm:entity/hit_detection/execute/reward"
+        "function": "blockrealm:entity/action/hit_detection/execute/reward"
     }
 }

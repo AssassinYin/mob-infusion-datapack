@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "blockrealm:entity/right_click_detection/execute"
+    "function": "blockrealm:entity/action/right_click_detection/execute"
   }
 }

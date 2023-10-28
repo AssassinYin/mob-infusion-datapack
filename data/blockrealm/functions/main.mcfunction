@@ -12,6 +12,7 @@ function blockrealm:entity/update
 #Completed:
 
 #In progression:
+#Action Entity System
 #Bossbar Display System
 #Effect Entity System
 #Event Entity System
@@ -20,7 +21,6 @@ function blockrealm:entity/update
 #Raycast System
 
 #Incompleted:
-#Action Entity System
 #Summon Entity System
 #Action Bar Display System
 #Item Lore Display System
