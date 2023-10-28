@@ -44,9 +44,6 @@ scoreboard players set @s ArmorAttackSpeed2 0
 scoreboard players set @s ArmorAttackSpeed3 0
 scoreboard players set @s ArmorAttackSpeed4 0
 
-#effect
-effect give @s saturation 1 255 true
-
 #attack arguments
 scoreboard players set @s AttackTimer -1
 

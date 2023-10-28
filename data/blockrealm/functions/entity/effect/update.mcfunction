@@ -23,6 +23,7 @@ execute if data entity @s {ActiveEffects:[{Id:22}]} run function blockrealm:enti
 #16 Night Vision
 #17 Hunger
 #23 Saturation
+effect give @s saturation 1 255 true
 #24 Glowing
 #28 Slow Falling
 #33 Darkness
