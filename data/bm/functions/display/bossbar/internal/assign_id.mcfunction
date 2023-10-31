@@ -12,6 +12,5 @@ execute as @a if score @s bossbar = .id bossbar run scoreboard players set .foun
 
 scoreboard players operation @s bossbar = .id bossbar
 
-execute store result storage minecraft:macro temp.display.bid int 1 run scoreboard players get .id bossbar
-execute if score .found bossbar matches 0 run function bm:display/bossbar/internal/assign_id1 with storage minecraft:macro temp.display
+execute if score .found bossbar matches 0 run function bm:display/bossbar/internal/assign_id1
 execute if score .found bossbar matches 1 run function bm:display/bossbar/internal/assign_id

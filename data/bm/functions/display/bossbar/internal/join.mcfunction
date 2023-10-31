@@ -4,5 +4,6 @@
 
 tag @s add user
 scoreboard players reset @s left
+scoreboard players reset @s bossbar
 
 function bm:display/bossbar/internal/assign_id
