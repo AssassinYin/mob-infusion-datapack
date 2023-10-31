@@ -3,4 +3,4 @@
 # arguments: none
 
 function bm:entity/stats/general/entity
-execute if entity @s[type=player] run function bm:entity/stats/general/player
+execute if entity @s[tag=player] run function bm:entity/stats/general/player

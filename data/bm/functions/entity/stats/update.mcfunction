@@ -3,13 +3,13 @@
 # macro: none
 
 #update projectile stats
-function bm:entity/stats/projectile/update
+execute if entity @s[tag=projectile] run function bm:entity/stats/projectile/update
 
 #update general stats
-function bm:entity/stats/general/update
+execute if entity @s[tag=!projectile] run function bm:entity/stats/general/update
 
 #update player stats
-execute if entity @s[type=player] run function bm:entity/stats/player/update
+execute if entity @s[tag=player] run function bm:entity/stats/player/update
 
 #update all entity stats
-function bm:entity/stats/entity/update
+execute if entity @s[tag=!projectile] run function bm:entity/stats/entity/update

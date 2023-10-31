@@ -1,6 +1,6 @@
 {
   "values":[
-    "blockrealm:init",
+    "bm:init",
     "math:zprivate/init",
     "raycast:init"
   ]
