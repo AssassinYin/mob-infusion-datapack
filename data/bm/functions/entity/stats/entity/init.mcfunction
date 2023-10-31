@@ -27,13 +27,13 @@ scoreboard objectives add DotPiDamageDisplay dummy
 
 #health
 #entity base stats, used to store how many health an entity naturally can regenerate
-scoreboard objectives add HealthRegBase dummy "Base Health Regenerate Value"
+scoreboard objectives add HealthRegBase dummy "Base Health Regenerate Value * 10000"
 #used to store a player's current hunger
 scoreboard objectives add Hunger dummy "Current Hunger"
 #used to store how many extra health an entity get in currently tick
-scoreboard objectives add HealthEffectReg dummy "Extra Health Regenerate Value"
+scoreboard objectives add HealthEffectReg dummy "Extra Health Regenerate Value * 10000"
 #used to store how many health an entity regenerate in currently tick
-scoreboard objectives add HealthRegeneration dummy "Final Health Regenerate Value"
+scoreboard objectives add HealthRegeneration dummy "Final Health Regenerate Value * 10000"
 
 #shield
 #used to store an entity's current shield
