@@ -1,6 +1,13 @@
-#base attribute
-#particle function
-#damage function
+### Let an entity fire a raycast ###
+# executor: the raycaster
+# macro: $distance: how far can the raycast travel
+#        $penetrateThroughWall: 0 or 1, set if penetrate through wall or not
+#        $bounceTriggerTime: how many times can the raycast bounce on wall
+#        $chainTriggerTime: how many times can the raycast jump between entity
+#        $stats_function: a function for stats of raycast
+#        $entity_hit_function: a function to executed when hit entity
+#        $block_hit_function: a function to executed when hit block
+#        $particle_function: a function for particle display
 
 #distance = iteration * 0.25 blocks
 scoreboard players set %iteration raycast 40

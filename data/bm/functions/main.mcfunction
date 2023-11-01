@@ -12,12 +12,15 @@ function bm:entity/update
 #Completed:
 
 #In progression:
+#Item System
+#Stats Entity System
+
+#Pause:
 #Action Entity System
 #Bossbar Display System
 #Effect Entity System
 #Event Entity System
 #Projectile Entity System
-#Stats Entity System
 #Raycast System
 
 #Incompleted:
@@ -28,4 +31,3 @@ function bm:entity/update
 #Name Display System
 #Scoreboard Display System
 #Title Display System
-#Item System
