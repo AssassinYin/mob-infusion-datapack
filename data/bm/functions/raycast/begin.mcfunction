@@ -19,7 +19,7 @@ tp @e[type=marker,tag=raycaster] @s
 tag @s add this
 
 #anchors raycast starting position to the eyes
-execute anchored eyes positioned ^ ^ ^ as @e[type=marker,tag=raycaster] run function raycast:raycast
+execute anchored eyes positioned ^ ^ ^ as @e[type=marker,tag=raycaster] run function bm:raycast/raycast
 
 #remove temporary tag
 tag @s remove this
