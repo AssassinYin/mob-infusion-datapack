@@ -1,22 +1,23 @@
 ### Let an entity fire a raycast ###
 # executor: the raycaster
-# macro: $distance: how far can the raycast travel
-#        $penetrateThroughWall: 0 or 1, set if penetrate through wall or not
+# macro: $distance: how far can the raycast travel, 0.25 blocks per unit
+#        $penetrateThroughWall: set if penetrate through wall or not
 #        $bounceTriggerTime: how many times can the raycast bounce on wall
+#        $chainRange: how far can the raycast jump between entity
 #        $chainTriggerTime: how many times can the raycast jump between entity
 #        $stats_function: a function for stats of raycast
+#        $hit_box_function: a function to executed when hit entity
 #        $entity_hit_function: a function to executed when hit entity
 #        $block_hit_function: a function to executed when hit block
 #        $particle_function: a function for particle display
 
-#distance = iteration * 0.25 blocks
-scoreboard players set %iteration raycast 40
-scoreboard players set %pierce raycast 40
+$scoreboard players set %iteration raycast $(distance)
+$scoreboard players set %penetrateThroughWall raycast $(penetrateThroughWall)
+$scoreboard players set %bounceTriggerTime raycast $(bounceTriggerTime)
+$scoreboard players set %chainTriggerTime raycast $(chainTriggerTime)
 
-#special settings
-scoreboard players set %penetrateThroughWall raycast 0
-scoreboard players set %bounceTriggerTime raycast 4
-scoreboard players set %chainTriggerTime raycast 4
+$data modify storage minecraft:macro temp.raycast.distance set value $(distance)
+$data modify storage minecraft:macro temp.raycast.chainRange set value $(chainRange)
 
 #temporary marker to fired the raycast
 summon marker ~ ~ ~ {Tags:["raycaster"]}
