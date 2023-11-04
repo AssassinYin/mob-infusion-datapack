@@ -40,10 +40,10 @@ effect give @s saturation 1 255 true
 #4 Mining Fatigue
 #5 Strength
 #6 Instant Health
-effect give @s instant_health 1 255 true
+effect give @s instant_health 2 255 true
 #7 Instant Damage
 #11 Resistance
-effect give @s resistance 1 255 true
+effect give @s resistance 2 255 true
 #12 Fire Resistance
 #18 Weakness
 execute if data entity @s {ActiveEffects:[{Id:18}]} run effect clear @s weakness

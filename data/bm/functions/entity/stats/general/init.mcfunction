@@ -22,9 +22,9 @@ scoreboard objectives add ArmorAttackSpeed4 dummy "Boots Attack Speed Increament
 
 #entity
 #used to store an entity's armor point
-scoreboard objectives add Armor dummy "Current Armor Value * 10000"
+scoreboard objectives add Armor dummy "Current Armor Value * 1000"
 #used to store an entity's armor toughness point
-scoreboard objectives add ArmorToughness dummy "Current Armor Toughness Value * 10000"
+scoreboard objectives add ArmorToughness dummy "Current Armor Toughness Value * 1000"
 
 #entity base stats, used to store an entity's base energy values
 scoreboard objectives add MaxEnergyBase dummy "Base Energy Value"
@@ -34,23 +34,23 @@ scoreboard objectives add Energy dummy "Current Energy Value"
 scoreboard objectives add MaxEnergy dummy "Current Max Energy Value"
 
 #entity base stats, used to store an entity's base health value
-scoreboard objectives add MaxHealthBase dummy "Base Health Value * 10000"
+scoreboard objectives add MaxHealthBase dummy "Base Health Value * 1000"
 #used to store an entity's current health
-scoreboard objectives add Health dummy "Current Health Value * 10000"
+scoreboard objectives add Health dummy "Current Health Value * 1000"
 #used to store an entity's current max health
-scoreboard objectives add MaxHealth dummy "Current Max Health Value * 10000"
+scoreboard objectives add MaxHealth dummy "Current Max Health Value * 1000"
 
 #player base stats, affact damage player dealt
-scoreboard objectives add AttackDamageBase dummy "Base Attack Damage Stats * 10000"
+scoreboard objectives add AttackDamageBase dummy "Base Attack Damage Stats * 1000"
 #used to store how many extra attack damage a player get from non-armor in currently tick
-scoreboard objectives add AttackDamageEffect dummy "Current Attack Damage Stats * 10000"
+scoreboard objectives add AttackDamageEffect dummy "Current Attack Damage Stats * 1000"
 #used to store an entity's current attack damage
-scoreboard objectives add AttackDamage dummy "Current Attack Damage Stats * 10000"
+scoreboard objectives add AttackDamage dummy "Current Attack Damage Stats * 1000"
 
 #player
 #player base stats, affact the time when attack timer reset
-scoreboard objectives add AttackSpeedBase dummy "Base Attack Speed Stats * 10000"
+scoreboard objectives add AttackSpeedBase dummy "Base Attack Speed Stats * 1000"
 #used to store how many extra attack speed a player get from non-armor in currently tick
-scoreboard objectives add AttackSpeedEffect dummy "Current Attack Speed Stats * 10000"
+scoreboard objectives add AttackSpeedEffect dummy "Current Attack Speed Stats * 1000"
 #used to store a player's current attack speed
-scoreboard objectives add AttackSpeed dummy "Current Attack Speed Stats * 10000"
+scoreboard objectives add AttackSpeed dummy "Current Attack Speed Stats * 1000"

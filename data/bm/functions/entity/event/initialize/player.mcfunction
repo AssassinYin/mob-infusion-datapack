@@ -7,9 +7,10 @@ scoreboard players add $totalPlayer PlayerID 1
 scoreboard players operation @s PlayerID = $totalPlayer PlayerID
 
 #base attribute
-attribute @s generic.attack_damage base set 1
+attribute @s generic.attack_damage base set 0
 attribute @s generic.attack_speed base set 1024
 attribute @s generic.max_health base set 256
+effect give @s saturation 1 255 true
 
 #player base stats, affact the time when attack timer reset
 scoreboard players set @s AttackSpeedBase 0

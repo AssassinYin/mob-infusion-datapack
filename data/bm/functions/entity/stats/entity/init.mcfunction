@@ -12,9 +12,9 @@ scoreboard objectives add EnergyRegeneration dummy "Final Energy Regenerate Valu
 
 #damage
 #used to store an entity's taken damage
-scoreboard objectives add MaDamage dummy "Magic Damage currently taken * 10000"
-scoreboard objectives add PhDamage dummy "Physical Damage currently taken * 10000"
-scoreboard objectives add PiDamage dummy "Piercing Damage currently taken * 10000"
+scoreboard objectives add MaDamage dummy "Magic Damage currently taken * 1000"
+scoreboard objectives add PhDamage dummy "Physical Damage currently taken * 1000"
+scoreboard objectives add PiDamage dummy "Piercing Damage currently taken * 1000"
 #used to display an entity's Magic damage
 scoreboard objectives add MaDamageDisplay dummy
 scoreboard objectives add DotMaDamageDisplay dummy
@@ -27,11 +27,11 @@ scoreboard objectives add DotPiDamageDisplay dummy
 
 #health
 #entity base stats, used to store how many health an entity naturally can regenerate
-scoreboard objectives add HealthRegBase dummy "Base Health Regenerate Value * 10000"
+scoreboard objectives add HealthRegBase dummy "Base Health Regenerate Value * 1000"
 #used to store how many extra health an entity get in currently tick
-scoreboard objectives add HealthEffectReg dummy "Extra Health Regenerate Value * 10000"
+scoreboard objectives add HealthEffectReg dummy "Extra Health Regenerate Value * 1000"
 #used to store how many health an entity regenerate in currently tick
-scoreboard objectives add HealthRegeneration dummy "Final Health Regenerate Value * 10000"
+scoreboard objectives add HealthRegeneration dummy "Final Health Regenerate Value * 1000"
 #used to store a player's current hunger
 scoreboard objectives add Hunger dummy "Current Hunger"
 

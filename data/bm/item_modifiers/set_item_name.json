@@ -3,11 +3,11 @@
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "minecraft:gun"
+      "source": "minecraft:macro"
     },
     "ops": [
       {
-        "source": "stats",
+        "source": "temp.stats",
         "target": "stats",
         "op": "replace"
       }

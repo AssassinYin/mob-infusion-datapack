@@ -2,6 +2,8 @@
 # executor: the server side
 # macro: none
 
+execute as @e[type=!player] store result entity @s Health double 1 run attribute @s generic.max_health get 1 
+
 #check undroppable item
 execute as @e[type=item,tag=!projectile,tag=!droppable] run function bm:entity/undroppable
 

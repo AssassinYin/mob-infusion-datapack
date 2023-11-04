@@ -3,7 +3,7 @@
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "minecraft:gun"
+      "source": "minecraft:stats"
     },
     "ops": [
       {

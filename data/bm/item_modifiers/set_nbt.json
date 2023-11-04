@@ -1,22 +1,13 @@
 [
   {
-    "function": "minecraft:set_name",
-    "entity": "this",
-    "name": {
-      "nbt": "Text1",
-      "block": "0 -63 0",
-      "interpret": true
-    }
-  },
-  {
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "minecraft:gun"
+      "source": "minecraft:macro"
     },
     "ops": [
       {
-        "source": "stats",
+        "source": "temp.stats",
         "target": "stats",
         "op": "replace"
       }
