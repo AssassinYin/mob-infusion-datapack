@@ -19,6 +19,7 @@ scoreboard objectives add DShieldTime dummy "Disable Shield Effect Duration"
 
 #immunity buffs
 scoreboard objectives add ElecResistTime dummy "Electric Resistance Effect Duration"
+scoreboard objectives add ElemResistTime dummy "Element Resistance Effect Duration"
 scoreboard objectives add FireResistTime dummy "Fire Resistance Effect Duration"
 scoreboard objectives add FrosResistTime dummy "Frosted Resistance Effect Duration"
 

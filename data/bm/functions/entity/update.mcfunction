@@ -2,6 +2,9 @@
 # executor: the server side
 # macro: none
 
+#check undroppable item
+execute as @e[type=item,tag=!projectile,tag=!droppable] run function bm:entity/undroppable
+
 #check projectile
 execute as @e[tag=projectile] run function bm:entity/projectile/update
 

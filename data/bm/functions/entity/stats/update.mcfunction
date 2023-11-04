@@ -2,9 +2,9 @@
 # executor: the server side
 # macro: none
 
-# all tracing entities: projectile, entity
-# entity: player, nonplayer
-# nonplayer: summoning, monster
+#all tracing entities: projectile, entity
+#entity: player, nonplayer
+#nonplayer: summoning, monster
 
 #update projectile stats
 execute if entity @s[tag=projectile] run function bm:entity/stats/projectile/update
