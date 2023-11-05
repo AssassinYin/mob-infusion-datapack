@@ -24,6 +24,7 @@ function bm:entity/update
 #Raycast System
 
 #Incompleted:
+#Team Entity System
 #Summon Entity System
 #Action Bar Display System
 #Item Lore Display System
