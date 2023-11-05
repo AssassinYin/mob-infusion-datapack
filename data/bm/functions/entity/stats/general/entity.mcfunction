@@ -9,10 +9,10 @@ scoreboard players operation #temp AttackDamage = @s AttackDamageBase
 scoreboard players operation #temp AttackDamage += @s AttackDamageEffect
 
 #armor
-execute store result score @s ArmorAttackDamage1 run data get entity @s Inventory[{Slot:103b}].tag.AttackDamage 10000
-execute store result score @s ArmorAttackDamage2 run data get entity @s Inventory[{Slot:102b}].tag.AttackDamage 10000
-execute store result score @s ArmorAttackDamage3 run data get entity @s Inventory[{Slot:101b}].tag.AttackDamage 10000
-execute store result score @s ArmorAttackDamage4 run data get entity @s Inventory[{Slot:100b}].tag.AttackDamage 10000
+execute store result score @s ArmorAttackDamage1 run data get entity @s Inventory[{Slot:103b}].tag.AttackDamage 1000
+execute store result score @s ArmorAttackDamage2 run data get entity @s Inventory[{Slot:102b}].tag.AttackDamage 1000
+execute store result score @s ArmorAttackDamage3 run data get entity @s Inventory[{Slot:101b}].tag.AttackDamage 1000
+execute store result score @s ArmorAttackDamage4 run data get entity @s Inventory[{Slot:100b}].tag.AttackDamage 1000
 
 scoreboard players operation #temp AttackDamage += @s ArmorAttackDamage1
 scoreboard players operation #temp AttackDamage += @s ArmorAttackDamage2
@@ -24,8 +24,8 @@ scoreboard players operation @s AttackDamage = #temp AttackDamage
 
 ### Store armor data into scoreboard ###
 
-execute store result score @s Armor run attribute @s minecraft:generic.armor get 100
-execute store result score @s ArmorToughness run attribute @s minecraft:generic.armor_toughness get 100
+execute store result score @s Armor run attribute @s minecraft:generic.armor get 1000
+execute store result score @s ArmorToughness run attribute @s minecraft:generic.armor_toughness get 1000
 
 ### Store energy data from armor into scoreboard ###
 
@@ -33,10 +33,10 @@ execute store result score @s ArmorToughness run attribute @s minecraft:generic.
 scoreboard players operation #temp MaxEnergy = @s MaxEnergyBase
 
 #armor
-execute store result score @s ArmorEnergy1 run data get entity @s Inventory[{Slot:103b}].tag.Energy 10000
-execute store result score @s ArmorEnergy2 run data get entity @s Inventory[{Slot:102b}].tag.Energy 10000
-execute store result score @s ArmorEnergy3 run data get entity @s Inventory[{Slot:101b}].tag.Energy 10000
-execute store result score @s ArmorEnergy4 run data get entity @s Inventory[{Slot:100b}].tag.Energy 10000
+execute store result score @s ArmorEnergy1 run data get entity @s Inventory[{Slot:103b}].tag.Energy 1000
+execute store result score @s ArmorEnergy2 run data get entity @s Inventory[{Slot:102b}].tag.Energy 1000
+execute store result score @s ArmorEnergy3 run data get entity @s Inventory[{Slot:101b}].tag.Energy 1000
+execute store result score @s ArmorEnergy4 run data get entity @s Inventory[{Slot:100b}].tag.Energy 1000
 
 scoreboard players operation #temp MaxEnergy += @s ArmorEnergy1
 scoreboard players operation #temp MaxEnergy += @s ArmorEnergy2
@@ -54,10 +54,10 @@ execute if score @s Energy > @s MaxEnergy store result score @s Energy run score
 scoreboard players operation #temp MaxHealth = @s MaxHealthBase
 
 #armor
-execute store result score @s ArmorHealth1 run data get entity @s Inventory[{Slot:103b}].tag.Health 10000
-execute store result score @s ArmorHealth2 run data get entity @s Inventory[{Slot:102b}].tag.Health 10000
-execute store result score @s ArmorHealth3 run data get entity @s Inventory[{Slot:101b}].tag.Health 10000
-execute store result score @s ArmorHealth4 run data get entity @s Inventory[{Slot:100b}].tag.Health 10000
+execute store result score @s ArmorHealth1 run data get entity @s Inventory[{Slot:103b}].tag.Health 1000
+execute store result score @s ArmorHealth2 run data get entity @s Inventory[{Slot:102b}].tag.Health 1000
+execute store result score @s ArmorHealth3 run data get entity @s Inventory[{Slot:101b}].tag.Health 1000
+execute store result score @s ArmorHealth4 run data get entity @s Inventory[{Slot:100b}].tag.Health 1000
 
 scoreboard players operation #temp MaxHealth += @s ArmorHealth1
 scoreboard players operation #temp MaxHealth += @s ArmorHealth2

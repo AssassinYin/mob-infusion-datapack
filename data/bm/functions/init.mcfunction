@@ -10,6 +10,7 @@
 
 function bm:display/init
 function bm:entity/init
+function bm:raycast/init
 
 #build up necessarily blocks
 forceload add -8 -8 7 7

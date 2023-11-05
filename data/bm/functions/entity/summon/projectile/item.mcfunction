@@ -15,4 +15,4 @@ tp @e[limit=1,sort=nearest,tag=motion] ~ ~1.35 ~
 
 $execute as @e[limit=1,sort=nearest,tag=motion] at @s run function bm:entity/event/initialize/motion/$(speed)
 
-#/function blockrealm:entity/summon/projectile/item {"display_item":"egg","nogravity":"0","speed":"normal","damage_function":""}
+#function bm:entity/summon/projectile/item {display_item:"egg",nogravity:"0",speed:"normal",damage_function:""}

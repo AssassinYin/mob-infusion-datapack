@@ -1,3 +1,3 @@
-#executor are attacker
-
-say Hit me!
+###  ###
+# executor: the attacker
+# macro: none

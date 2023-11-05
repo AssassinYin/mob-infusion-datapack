@@ -1,3 +1,7 @@
+### Hit by raycast ###
+# executor: entity hit by the raycast
+# macro: $chainRange: how far can the raycast jump between entity
+
 say hit
 
 tag @s add hit
@@ -10,6 +14,6 @@ scoreboard players set %iteration raycast 0
 scoreboard players set %bounceTriggerTime raycast 0
 
 #if can trigger chain
-execute at @s if score %chainTriggerTime raycast matches 1.. if entity @e[sort=nearest,tag=!raycaster,tag=!this,tag=!hit,distance=..10] run function bm:raycast/special_properties/chain
+$execute at @s if score %chainTriggerTime raycast matches 1.. if entity @e[sort=nearest,tag=!raycaster,tag=!this,tag=!hit,distance=..$(chainRange)] run function bm:raycast/special_properties/chain with storage minecraft:macro temp.raycast
 
 tag @s remove hit

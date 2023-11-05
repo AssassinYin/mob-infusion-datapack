@@ -1,7 +1,6 @@
 {
   "values":[
     "bm:init",
-    "math:zprivate/init",
-    "raycast:init"
+    "math:zprivate/init"
   ]
 }

@@ -1,6 +1,6 @@
- {
-       "pack": {
-           "pack_format": 15,
-           "description": "pack.description.data"
-       }
-   }
+{
+    "pack": {
+        "pack_format": 15,
+        "description": "pack.description.data"
+    }
+}

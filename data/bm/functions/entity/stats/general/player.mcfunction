@@ -9,10 +9,10 @@ scoreboard players operation #temp AttackSpeed = @s AttackSpeedBase
 scoreboard players operation #temp AttackSpeed += @s AttackSpeedEffect
 
 #armor
-execute store result score @s ArmorAttackSpeed1 run data get entity @s Inventory[{Slot:103b}].tag.AttackSpeed 10000
-execute store result score @s ArmorAttackSpeed2 run data get entity @s Inventory[{Slot:102b}].tag.AttackSpeed 10000
-execute store result score @s ArmorAttackSpeed3 run data get entity @s Inventory[{Slot:101b}].tag.AttackSpeed 10000
-execute store result score @s ArmorAttackSpeed4 run data get entity @s Inventory[{Slot:100b}].tag.AttackSpeed 10000
+execute store result score @s ArmorAttackSpeed1 run data get entity @s Inventory[{Slot:103b}].tag.AttackSpeed 1000
+execute store result score @s ArmorAttackSpeed2 run data get entity @s Inventory[{Slot:102b}].tag.AttackSpeed 1000
+execute store result score @s ArmorAttackSpeed3 run data get entity @s Inventory[{Slot:101b}].tag.AttackSpeed 1000
+execute store result score @s ArmorAttackSpeed4 run data get entity @s Inventory[{Slot:100b}].tag.AttackSpeed 1000
 
 scoreboard players operation #temp AttackSpeed += @s ArmorAttackSpeed1
 scoreboard players operation #temp AttackSpeed += @s ArmorAttackSpeed2
