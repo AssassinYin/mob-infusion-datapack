@@ -28,13 +28,20 @@ scoreboard objectives add System dummy
 #bool for read
 scoreboard players set #FALSE System 0
 scoreboard players set #TRUE System 1
+
 #.isDebug: bool
 scoreboard players set .isDebug System 1
+#.borderStartRange: positive integer
+scoreboard players set .borderStartRange System 0
+#.borderEndRange: positive integer
+scoreboard players set .borderEndRange System 0
+#.borderShrinkSpeed: positive integer
+scoreboard players set .borderShrinkSpeed System 0
 #.difficulty: 0-3
 scoreboard players set .difficulty System 0
-#.teamMaximum: 2-8
+#.teamMaximum: 2-16
 scoreboard players set .teamMaximum System 0
-#.teamMinimum: 2-8
+#.teamMinimum: 2-16
 scoreboard players set .teamMinimum System 0
 #.maximumPlayerPerTeam: 2-8
 scoreboard players set .maximumPlayerPerTeam System 0
@@ -54,12 +61,12 @@ scoreboard players set .scoreGoal System 0
 scoreboard players set .neverRespawn System 0
 #.respawnTime: positive integer
 scoreboard players set .respawnTime System 0
-#.canSwitchClass: bool
-scoreboard players set .canSwitchClass System 0
 #.respawnOnWill: bool
 scoreboard players set .respawnOnWill System 0
+#.canSwitchClass: bool
+scoreboard players set .canSwitchClass System 0
 #.respawnWithTeammate: bool
-scoreboard players set .respawnWithTeammate System 0
+scoreboard players set .canRespawnWithTeammate System 0
 #.respawnAtRandomPlace: bool
 scoreboard players set .respawnAtRandomPlace System 0
 #.naturalRegeneration: bool

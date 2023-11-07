@@ -7,8 +7,8 @@
     },
     "ops": [
       {
-        "source": "temp.stats",
-        "target": "stats",
+        "source": "temp.item.stamina",
+        "target": "stamina",
         "op": "replace"
       }
     ]
@@ -18,9 +18,12 @@
     "entity": "this",
     "name": [
       {
+        "text": " | "
+      },
+      {
         "score": {
-          "name": ".ammo.count",
-          "objective": "stats"
+          "name": ".stamina.current",
+          "objective": "temp"
         }
       },
       {
@@ -28,17 +31,8 @@
       },
       {
         "score": {
-          "name": ".reload.mag",
-          "objective": "stats"
-        }
-      },
-      {
-        "text": " | "
-      },
-      {
-        "score": {
-          "name": "@s",
-          "objective": "ammo.reserve"
+          "name": ".stamina.maximum",
+          "objective": "temp"
         }
       }
     ]
