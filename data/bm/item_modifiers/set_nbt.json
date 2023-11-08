@@ -7,8 +7,8 @@
     },
     "ops": [
       {
-        "source": "temp.stats",
-        "target": "stats",
+        "source": "temp.item.stamina",
+        "target": "stamina",
         "op": "replace"
       }
     ]
