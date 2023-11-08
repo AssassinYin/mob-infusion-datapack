@@ -3,7 +3,7 @@
 # macro: none
 
 #for display bug
-data modify entity @s Age set value -32768
+data modify entity @s[type=item] Age set value -32768
 
 #hit box detection
 
