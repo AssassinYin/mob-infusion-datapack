@@ -2,11 +2,11 @@
 # executor: the player to be updated
 # macro: none
 
-#update ability recharge bar
+#update ability's stats in player's inventory
 function bm:entity/stats/player/ability/update
 
-#update attack speed bar
-function bm:entity/stats/player/attack/update
+#update weapon's stats in player's inventory
+function bm:entity/stats/player/weapon/update
 
-#update quiver bar
+#update quiver's stats in player's inventory
 function bm:entity/stats/player/quiver/update
