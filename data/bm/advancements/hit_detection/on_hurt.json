@@ -1,12 +1,12 @@
 {
     "criteria": {
-        "is_fireball": {
+        "is_arrow": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
                 	"type": {
             		    "direct_entity": {
-              				"type": "minecraft:fireball"
+              				"type": "minecraft:arrow"
             			}
           			},
                     "source_entity": {

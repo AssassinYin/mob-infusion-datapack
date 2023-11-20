@@ -61,4 +61,4 @@ function bm:entity/effect/control/update
 function bm:entity/effect/dot/update
 
 #lock motion effect
-execute at @s[type=player,tag=headlock] as @e[tag=headlock,type=area_effect_cloud,sort=nearest] if score @s PlayerID = @p PlayerID run tp @p @s
+execute at @s[tag=headlock] as @e[tag=headlock,type=area_effect_cloud,sort=nearest,limit=1] if score @s PlayerID = @e[tag=headlock,sort=nearest,limit=1] PlayerID run tp @e[tag=headlock,sort=nearest,limit=1] @s

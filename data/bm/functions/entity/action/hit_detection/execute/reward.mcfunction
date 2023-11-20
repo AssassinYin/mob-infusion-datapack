@@ -2,9 +2,8 @@
 # executor: the attacker
 # macro: none
 
-data modify storage minecraft:macro temp.entity.damageFunction set from entity @s SelectedItem.tag.stats.DamageFunction
+execute if entity @s[advancements={bm:hit_detection/on_hit={arrow_triggered=false}}] run function bm:entity/action/hit_detection/execute/fetch_selected_data
+execute if entity @s[advancements={bm:hit_detection/on_hit={arrow_triggered=true}}] run function bm:entity/action/hit_detection/execute/fetch_all_data
 
-function bm:entity/action/hit_detection/execute/apply_on_hit with storage minecraft:macro temp.entity
-
-execute if entity @s[advancements={bm:hit_detection/on_hit={target=true}}] run function bm:entity/action/hit_detection/internal/find_entity
+function bm:entity/action/hit_detection/internal/find_entity
 advancement revoke @s only bm:hit_detection/on_hit

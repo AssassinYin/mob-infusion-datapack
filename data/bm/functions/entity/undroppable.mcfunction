@@ -1,4 +1,4 @@
-### Make item undroppable ###
+### Makes item undroppable ###
 # executor: the item being dropped
 # macro: none
 

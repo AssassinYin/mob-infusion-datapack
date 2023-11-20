@@ -1,28 +1,15 @@
 {
     "criteria": {
-        "target": {
+        "arrow_triggered": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
-                "entity": {
-                    "type": "#bm:targets"
+                "damage": {
+                	"type": {
+            		    "direct_entity": {
+              				"type": "minecraft:arrow"
+            			}
+          			}
                 }
-            }
-        },
-        "not_target": {
-            "trigger": "minecraft:player_hurt_entity",
-            "conditions": {
-                "entity": [
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "type": "#bm:targets"
-                            }
-                        }
-                    }
-                ]
             }
         },
         "bit0": {
@@ -924,8 +911,7 @@
     },
     "requirements": [
         [
-            "target",
-            "not_target"
+            "is_arrow"
         ],
         [
             "bit0",

@@ -2,6 +2,13 @@
 # executor: the entity to be updated
 # macro: none
 
+#force regenerate health on all nonplayer entity
+execute store result entity @s[tag=nonplayer] Health double 1 run attribute @s generic.max_health get 1
+
+#update general stats
+function bm:entity/stats/entity/general/entity
+execute if entity @s[tag=player] run function bm:entity/stats/entity/general/player
+
 #update energy regeneration
 function bm:entity/stats/entity/energy/regenerate
 
