@@ -123,7 +123,7 @@ gamerule tntExplosionDropDecay true
 gamerule universalAnger false
 gamerule waterSourceConversion false
 
-#consts
+#set constants
 scoreboard objectives add Const dummy
 scoreboard players set 1000000 Const 1000000
 scoreboard players set 100000 Const 100000

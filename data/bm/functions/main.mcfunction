@@ -8,6 +8,9 @@ function bm:display/update
 #entity
 function bm:entity/update
 
+#item
+function bm:item/update
+
 #Progression
 #Completed:
 

@@ -1,0 +1,30 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:macro"
+    },
+    "ops": [
+      {
+        "source": "temp.item.quiver.current",
+        "target": "stats.quiver.current",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:macro"
+    },
+    "ops": [
+      {
+        "source": "temp.item.quiver.rechargeTime",
+        "target": "stats.quiver.rechargeTime",
+        "op": "replace"
+      }
+    ]
+  }
+]

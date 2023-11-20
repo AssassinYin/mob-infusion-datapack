@@ -74,3 +74,5 @@ scoreboard players set @s ArmorEnergy3 0
 scoreboard players set @s ArmorEnergy4 0
 
 tag @s add entity
+
+tag @s remove entity.init

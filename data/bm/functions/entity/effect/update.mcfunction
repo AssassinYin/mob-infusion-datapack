@@ -4,10 +4,6 @@
 
 #update vanilla effects
 
-#for trigger damage
-#26 Luck
-#27 Bad Luck
-
 #apply custom effects
 #10 Regeneration
 #22 Absorption: Increase shield value
