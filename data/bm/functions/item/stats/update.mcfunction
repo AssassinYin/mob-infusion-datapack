@@ -2,6 +2,9 @@
 # executor: the player to be updated
 # macro: none
 
+#right click detection
+execute as @a[tag=player] run function bm:entity/action/right_click_detection/update
+
 #update ability's stats in player's inventory
 execute as @a run function bm:item/stats/ability/update
 
