@@ -81,7 +81,7 @@ scoreboard players set .reviveTime System 0
 gamerule announceAdvancements true
 gamerule blockExplosionDropDecay false
 gamerule commandBlockOutput false
-# gamerule commandModificationBlockLimit
+gamerule commandModificationBlockLimit 65565
 gamerule disableElytraMovementCheck true
 gamerule disableRaids true
 gamerule doDaylightCycle false
