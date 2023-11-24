@@ -3,7 +3,7 @@
 # macro: none
 
 say Hit me!
-function bm:entity/action/hit_detection/apply/empty_stamina
+function bm:entity/action/hit_detection/damage/melee/empty_stamina
 
 execute store result score #damageMult temp run data get entity @s SelectedItem.tag.stats.AttackDamageMult 1000
 scoreboard players operation #finalDamageDealt temp = @s AttackDamage

@@ -9,6 +9,7 @@
 # '#' for special arugments
 
 function bm:display/init
+function bm:item/init
 function bm:entity/init
 function bm:raycast/init
 

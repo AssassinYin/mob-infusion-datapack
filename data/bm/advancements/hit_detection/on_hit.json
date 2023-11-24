@@ -1,5 +1,30 @@
 {
     "criteria": {
+        "target": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#bm:targets"
+                }
+            }
+        },
+        "not_target": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type": "#bm:targets"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
         "arrow_triggered": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
@@ -7,6 +32,18 @@
                 	"type": {
             		    "direct_entity": {
               				"type": "minecraft:arrow"
+            			}
+          			}
+                }
+            }
+        },
+        "potion_triggered": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                	"type": {
+            		    "direct_entity": {
+              				"type": "minecraft:potion"
             			}
           			}
                 }
@@ -911,7 +948,10 @@
     },
     "requirements": [
         [
-            "is_arrow"
+            "target",
+            "not_target",
+            "arrow_triggered",
+            "potion_triggered"
         ],
         [
             "bit0",

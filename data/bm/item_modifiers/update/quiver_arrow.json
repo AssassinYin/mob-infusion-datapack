@@ -5,7 +5,7 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": ".quiver.current"
+        "name": "quiver.current"
       },
       "score": "temp",
       "scale": 1

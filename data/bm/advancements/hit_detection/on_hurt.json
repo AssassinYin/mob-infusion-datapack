@@ -669,7 +669,7 @@
     "requirements": [
         [
             "target",
-            "is_fireball"
+            "is_arrow"
         ],
         [
             "bit0",
