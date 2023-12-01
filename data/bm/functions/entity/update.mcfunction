@@ -12,13 +12,11 @@ execute as @e[type=item,tag=!projectile,tag=!droppable] run function bm:entity/u
 #check projectile
 execute as @e[tag=projectile] run function bm:entity/projectile/update
 
-#update entity effect
-execute as @e[tag=entity] run function bm:entity/effect/update
+#check entity
+execute as @e[tag=entity] run function bm:entity/entity/update
 
-#update entity stats
+#update all entities' stats
 function bm:entity/stats/update
 
-#update entity action
-function bm:entity/action/update
-
-#update entity events
+#update all entities' events
+function bm:entity/event/update
