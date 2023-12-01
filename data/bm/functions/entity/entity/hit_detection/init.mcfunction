@@ -1,8 +1,6 @@
 #hit detection
 scoreboard objectives add entityid dummy
 
-scoreboard players set #loaded entityid 1
-
 scoreboard objectives add entityid.0 dummy
 scoreboard objectives add entityid.1 dummy
 scoreboard objectives add entityid.2 dummy

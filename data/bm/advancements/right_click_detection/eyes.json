@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "bm:entity/action/right_click_detection/execute"
+    "function": "bm:item/right_click_detection/execute"
   }
 }

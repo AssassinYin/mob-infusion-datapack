@@ -2,8 +2,8 @@
 # executor: the server side
 # macro: none
 
-scoreboard objectives add bossbar dummy
-scoreboard objectives add left minecraft.custom:minecraft.leave_game
+scoreboard objectives add Bossbar dummy
+scoreboard objectives add Left minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add HealthDisplay dummy
 scoreboard objectives add DotHealthDisplay dummy

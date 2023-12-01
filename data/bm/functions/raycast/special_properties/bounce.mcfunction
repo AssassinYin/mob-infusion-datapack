@@ -1,5 +1,5 @@
 ### @s = aec
-scoreboard players remove %bounceTriggerTime raycast 1
+scoreboard players remove %bounceTriggerTime Raycast 1
 
 execute unless block ~0.25 ~ ~ air store result entity @s Rotation[0] float -1 run data get entity @s Rotation[0]
 execute unless block ~-0.25 ~ ~ air store result entity @s Rotation[0] float -1 run data get entity @s Rotation[0]

@@ -2,4 +2,4 @@
 # executor: the server side
 # macro: none
 
-execute as @e[type=!player,tag=entity] run function bm:display/name/display
+execute as @e[tag=!player,tag=entity] run function bm:display/name/display

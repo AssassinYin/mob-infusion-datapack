@@ -5,11 +5,11 @@
 #        $bounceTriggerTime:    how many times can the raycast bounce on wall
 #        $chainRange:           how far can the raycast jump between entity
 #        $chainTriggerTime:     how many times can the raycast jump between entity
-#        $stats_function:       a function for stats of raycast
-#        $hit_box_function:     a function to executed when hit entity
-#        $entity_hit_function:  a function to executed when hit entity
-#        $block_hit_function:   a function to executed when hit block
-#        $particle_function:    a function for particle display
+#        $statsFunc:            a function for stats of raycast
+#        $hitFunc:              a function to executed when hit
+#        $entityHitFunc:        a function to executed when hit entity
+#        $blockHitFunc:         a function to executed when hit block
+#        $particleFunc:         a function for particle display
 
 $scoreboard players set %iteration raycast $(distance)
 $scoreboard players set %penetrateThroughWall raycast $(penetrateThroughWall)

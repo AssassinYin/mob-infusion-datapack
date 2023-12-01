@@ -1,2 +1,2 @@
-execute if score %bounceTriggerTime raycast matches 0 run scoreboard players set %iteration raycast 0
-execute if score %bounceTriggerTime raycast matches 1.. run function bm:raycast/special_properties/bounce
+execute if score %bounceTriggerTime Raycast matches 0 run scoreboard players set %iteration Raycast 0
+execute if score %bounceTriggerTime Raycast matches 1.. run function bm:raycast/special_properties/bounce
