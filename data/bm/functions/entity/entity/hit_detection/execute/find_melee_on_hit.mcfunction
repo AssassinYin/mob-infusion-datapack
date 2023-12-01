@@ -2,4 +2,4 @@
 # executor: the attacker
 # macro: $damageFunction: the id of the damage function
 
-$function bm:entity/action/hit_detection/damage/melee/$(damageFunction)/on_hit
+$function bm:entity/entity/hit_detection/damage/melee/$(damageFunction)/on_hit

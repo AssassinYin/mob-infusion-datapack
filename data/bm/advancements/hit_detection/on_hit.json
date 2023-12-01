@@ -1083,6 +1083,6 @@
         ]
     ],
     "rewards": {
-        "function": "bm:entity/action/hit_detection/execute/reward"
+        "function": "bm:entity/entity/hit_detection/execute/reward"
     }
 }
