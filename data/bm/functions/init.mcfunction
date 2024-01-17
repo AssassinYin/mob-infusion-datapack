@@ -9,7 +9,7 @@
 # '#' : reserved for constant arugments
 # '&' : reserved for temp arugments
 #
-# ALLCAPS        : Constants, should not be changed at ALL
+# ALLCAPS        : constants, should not be changed at ALL
 # for score objective and target only
 #
 # lowerCamelCase : changeable score/data
@@ -29,6 +29,15 @@
 # kebab-case     : used by status check tag label
 ################################################################
 
+#temporary storage
+scoreboard objectives add Temp dummy
+
+#store identifiers of player
+scoreboard objectives add PlayerID dummy
+
+#store system settings
+scoreboard objectives add system dummy
+
 function bm:display/init
 function bm:entity/init
 function bm:hitbox/init
@@ -39,16 +48,5 @@ function bm:_init_/constant
 function bm:_init_/gamerule
 function bm:_init_/block
 
-#temporary storage
-scoreboard objectives add Temp dummy
-
-#store identifiers of player
-scoreboard objectives add PlayerID dummy
-
-#store system settings
-scoreboard objectives add system dummy
-
 #marked system as initialized
 scoreboard players set .initialized system 1
-
-

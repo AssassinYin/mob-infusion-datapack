@@ -41,12 +41,19 @@ scoreboard objectives add Health dummy "Current Health Value * 1000"
 #used to store an entity's current max health
 scoreboard objectives add MaxHealth dummy "Current Max Health Value * 1000"
 
-#player base stats, affact damage player dealt
+#entity base stats, affact damage player dealt
 scoreboard objectives add AttackDamageBase dummy "Base Attack Damage Stats * 1000"
 #used to store how many extra attack damage a player get from non-armor in currently tick
 scoreboard objectives add AttackDamageEffect dummy "Current Attack Damage Stats * 1000"
 #used to store an entity's current attack damage
 scoreboard objectives add AttackDamage dummy "Current Attack Damage Stats * 1000"
+
+#entity base stats, used to store how many energy an entity naturally can regenerate
+scoreboard objectives add EnergyRegBase dummy "Base Energy Regenerate Value"
+#used to store how many extra energy an entity get in currently tick
+scoreboard objectives add EnergyEffectReg dummy "Extra Energy Regenerate Value"
+#used to store how many energy an entity regenerate in currently tick
+scoreboard objectives add EnergyRegeneration dummy "Final Energy Regenerate Value"
 
 #player
 #player base stats, affact the time when attack timer reset
@@ -55,14 +62,6 @@ scoreboard objectives add AttackSpeedBase dummy "Base Attack Speed Stats * 1000"
 scoreboard objectives add AttackSpeedEffect dummy "Current Attack Speed Stats * 1000"
 #used to store a player's current attack speed
 scoreboard objectives add AttackSpeed dummy "Current Attack Speed Stats * 1000"
-
-#energy
-#item stats, used to store how many energy an entity naturally can regenerate
-scoreboard objectives add EnergyRegBase dummy "Base Energy Regenerate Value"
-#used to store how many extra energy an entity get in currently tick
-scoreboard objectives add EnergyEffectReg dummy "Extra Energy Regenerate Value"
-#used to store how many energy an entity regenerate in currently tick
-scoreboard objectives add EnergyRegeneration dummy "Final Energy Regenerate Value"
 
 #damage
 #used to store an entity's taken damage

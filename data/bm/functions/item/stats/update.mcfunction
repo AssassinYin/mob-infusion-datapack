@@ -17,4 +17,4 @@ execute as @a[nbt={SelectedItem:{tag:{stats:{WeaponType:2}}}}] run function bm:i
 #update crossbow weapon's stats in player's inventory
 execute as @a[nbt={SelectedItem:{tag:{stats:{WeaponType:3}}}}] run function bm:item/stats/quiver/update
 
-tag @a[tag=offhandSwaped] remove offhandSwaped
+tag @a[tag=offhand-swaped] remove offhand-swaped

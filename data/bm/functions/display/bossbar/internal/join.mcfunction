@@ -3,7 +3,7 @@
 # macro: none
 
 tag @s add user
-scoreboard players reset @s left
-scoreboard players reset @s bossbar
+scoreboard players reset @s Left
+scoreboard players reset @s Bossbar
 
 function bm:display/bossbar/internal/assign_id
