@@ -5,8 +5,8 @@
 scoreboard objectives add CONST dummy
 
 #bool for read
-scoreboard players set #FALSE CONST 0
 scoreboard players set #TRUE CONST 1
+scoreboard players set #FALSE CONST 0
 
 scoreboard players set #1000000 CONST 1000000
 scoreboard players set #100000 CONST 100000

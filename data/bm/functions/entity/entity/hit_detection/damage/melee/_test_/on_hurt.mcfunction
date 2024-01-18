@@ -4,4 +4,4 @@
 
 say Ouch!
 
-scoreboard players operation @s PhDamage = #finalDamageDealt temp
+scoreboard players operation @s phDamage = &damageDealt Temp

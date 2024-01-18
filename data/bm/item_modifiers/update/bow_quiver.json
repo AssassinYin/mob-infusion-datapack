@@ -7,8 +7,8 @@
     },
     "ops": [
       {
-        "source": "temp.item.quiver.current",
-        "target": "stats.quiver.current",
+        "source": "temp.item.currentCharge",
+        "target": "currentStats.quiver.currentCharge",
         "op": "replace"
       }
     ]
@@ -21,8 +21,8 @@
     },
     "ops": [
       {
-        "source": "temp.item.quiver.rechargeTime",
-        "target": "stats.quiver.rechargeTime",
+        "source": "temp.item.currentRechargeTime",
+        "target": "currentStats.quiver.currentRechargeTime",
         "op": "replace"
       }
     ]

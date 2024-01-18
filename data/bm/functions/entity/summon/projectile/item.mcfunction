@@ -3,10 +3,13 @@
 # macro: $display_item: a minecraft item id
 #        $nogravity: 0 or 1
 #        $speed: slow, normal or fast
-#        $stats_function: a function for stats of entity
-#        $entity_hit_function: a function to executed when hit entity
-#        $block_hit_function: a function to executed when hit block
-#        $particle_function: a function for particle display
+#---#
+#        $blockHitFunc:      a function to executed when hit block
+#        $damageFunc:        a function to executed for damage
+#        $entityHitFunc:     a function to executed when hit entity
+#        $hitFunc:           a function to executed when hit
+#        $particleFunc:      a function for particle display
+#        $statsFunc:         a function for stats of raycast
 
 $summon item ~ ~1 ~ {NoGravity:$(nogravity)b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,Age:-32768,Health:255,PickupDelay:32767,Invulnerable:1b,Motion:[0.0,0.0,0.0],Tags:["projectile","motion"],Item:{id:"$(display_item)",Count:1b}}
 

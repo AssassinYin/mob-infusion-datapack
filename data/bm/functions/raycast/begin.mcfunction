@@ -5,16 +5,19 @@
 #        $bounceTriggerTime:    how many times can the raycast bounce on wall
 #        $chainRange:           how far can the raycast jump between entity
 #        $chainTriggerTime:     how many times can the raycast jump between entity
-#        $statsFunc:            a function for stats of raycast
-#        $hitFunc:              a function to executed when hit
-#        $entityHitFunc:        a function to executed when hit entity
+#---#
 #        $blockHitFunc:         a function to executed when hit block
+#        $damageFunc:           a function to executed for damage
+#        $entityHitFunc:        a function to executed when hit entity
+#        $hitFunc:              a function to executed when hit
 #        $particleFunc:         a function for particle display
+#        $statsFunc:            a function for stats of raycast
+#function bm:raycast/begin {distance:40, penetrateThroughWall:1, bounceTriggerTime:0, chainTriggerTime:0, chainRange:0}
 
-$scoreboard players set %iteration raycast $(distance)
-$scoreboard players set %penetrateThroughWall raycast $(penetrateThroughWall)
-$scoreboard players set %bounceTriggerTime raycast $(bounceTriggerTime)
-$scoreboard players set %chainTriggerTime raycast $(chainTriggerTime)
+$scoreboard players set %iteration Raycast $(distance)
+$scoreboard players set %penetrateThroughWall Raycast $(penetrateThroughWall)
+$scoreboard players set %bounceTriggerTime Raycast $(bounceTriggerTime)
+$scoreboard players set %chainTriggerTime Raycast $(chainTriggerTime)
 
 $data modify storage minecraft:macro temp.raycast.distance set value $(distance)
 $data modify storage minecraft:macro temp.raycast.chainRange set value $(chainRange)

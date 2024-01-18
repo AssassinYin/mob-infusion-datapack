@@ -1,7 +1,7 @@
-### Regeneration energy based on EnergyEffectReg ###
+### Regeneration energy based on energyEffectReg ###
 # executor: the entity to be regenerating energy
 # macro: none
 
-scoreboard players operation @s EnergyRegeneration += @s EnergyEffectReg
+scoreboard players operation @s EnergyRegeneration += @s energyEffectReg
 
-scoreboard players set @s EnergyEffectReg 0
+scoreboard players set @s energyEffectReg 0

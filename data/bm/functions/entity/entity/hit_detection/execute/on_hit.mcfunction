@@ -1,7 +1,12 @@
-###  ###
+### Check what hit the entity ###
 # executor: the damaged entity
 # macro: none
 
-execute if score .isPotionHit temp matches 1 if score .isArrowHit temp matches 0
-execute if score .isPotionHit temp matches 0 if score .isArrowHit temp matches 1 run function bm:entity/entity/hit_detection/execute/find_arrow_id
-execute if score .isArrowHit temp matches 0 if score .isPotionHit temp matches 0 run function bm:entity/entity/hit_detection/execute/find_melee_on_hurt with storage minecraft:macro temp.entity
+#triggered by melee
+execute if score &IsArrowHit Temp = #FALSE CONST if score &IsPotionHit Temp = #FALSE CONST run function bm:entity/entity/hit_detection/execute/melee/find_on_hurt_function with storage minecraft:macro temp.entity
+
+#triggered by arrow
+execute if score &IsArrowHit Temp = #TRUE CONST if score &IsPotionHit Temp = #FALSE CONST run function bm:entity/entity/hit_detection/execute/arrow/check_id
+
+#triggered by potion
+execute if score &IsArrowHit Temp = #FALSE CONST if score &IsPotionHit Temp = #TRUE CONST run function bm:entity/entity/hit_detection/execute/potion/check_id

@@ -8,6 +8,7 @@
 # '%' : reserved for macro arugments
 # '#' : reserved for constant arugments
 # '&' : reserved for temp arugments
+# '$' : reserved for overall stats
 #
 # ALLCAPS        : constants, should not be changed at ALL
 # for score objective and target only
@@ -18,6 +19,7 @@
 # for score target => intend to be changed by outer func
 # for data storage => intend to be temporary storage
 # for item => intend to be updated during other events
+# used by all macro parameters
 #
 # UpperCamelCase : score/data loaded data from other storage
 # for score objective => not intend to be changed manually

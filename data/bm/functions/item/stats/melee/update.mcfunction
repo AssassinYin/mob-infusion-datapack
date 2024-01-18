@@ -3,19 +3,25 @@
 # macro: none
 
 #fetch data to scoreboard from player's SelectedItem
-execute store result score stamina.rechargePerTick temp run data get entity @s SelectedItem.tag.stats.stamina.rechargePerTick 1
-execute store result score stamina.current temp run data get entity @s SelectedItem.tag.stats.stamina.current 1
-execute store result score stamina.maximum temp run data get entity @s SelectedItem.tag.stats.stamina.maximum 1
+execute store result score &currentRechargePerTick Temp run data get entity @s SelectedItem.tag.currentStats.stamina.currentRechargePerTick 1
+execute store result score &currentMaximum Temp run data get entity @s SelectedItem.tag.currentStats.stamina.currentMaximum 1
+execute store result score &currentCharge Temp run data get entity @s SelectedItem.tag.currentStats.stamina.currentCharge 1
+execute store result score &currentRechargeTime Temp run data get entity @s SelectedItem.tag.currentStats.stamina.currentRechargeTime 1
 
-scoreboard players operation stamina.current temp += stamina.rechargePerTick temp
+#currentMaximum & currentRechargeTime affected by player's AttackSpeed & WeaponAttributes.Multiplier.AttackSpeed
+#---#
 
-execute if score stamina.current temp > stamina.maximum temp store result score stamina.current temp run scoreboard players get stamina.maximum temp
+#recharge time
+execute if score &currentCharge Temp < &currentMaximum Temp run scoreboard players add &currentRechargeTime Temp 1
+execute if score &currentRechargeTime Temp >= &currentRechargePerTick Temp run function bm:item/stats/melee/update_current_charge
+execute if score &currentCharge Temp > &currentMaximum Temp store result score &currentCharge Temp run scoreboard players get &currentMaximum Temp
 
 #check
-execute if entity @s[tag=!inMeleeCooldown] unless score stamina.current temp = stamina.maximum temp run function bm:item/stats/melee/left_click_attack/in_melee_cooldown
-execute if entity @s[tag=inMeleeCooldown] if score stamina.current temp = stamina.maximum temp run function bm:item/stats/melee/left_click_attack/end_melee_cooldown
+execute if entity @s[tag=!in-melee-cooldown] unless score &currentCharge Temp = &currentMaximum Temp run function bm:item/stats/melee/left_click_attack/in_melee_cooldown
+execute if entity @s[tag=in-melee-cooldown] if score &currentCharge Temp = &currentMaximum Temp run function bm:item/stats/melee/left_click_attack/end_melee_cooldown
 
 #store data from scoreboard to player's SelectedItem
-execute store result storage minecraft:macro temp.item.stamina.current int 1 run scoreboard players get stamina.current temp
+execute store result storage minecraft:macro temp.item.currentCharge int 1 run scoreboard players get &currentCharge Temp
+execute store result storage minecraft:macro temp.item.currentRechargeTime int 1 run scoreboard players get &currentRechargeTime Temp
 
 item modify entity @s weapon.mainhand bm:update/melee_stamina

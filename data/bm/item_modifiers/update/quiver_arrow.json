@@ -5,9 +5,9 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "quiver.current"
+        "name": "&currentCharge"
       },
-      "score": "temp",
+      "score": "Temp",
       "scale": 1
     },
     "add": false

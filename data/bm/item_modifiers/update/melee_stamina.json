@@ -7,8 +7,22 @@
     },
     "ops": [
       {
-        "source": "temp.item.stamina.current",
-        "target": "stats.stamina.current",
+        "source": "temp.item.currentCharge",
+        "target": "currentStats.stamina.currentCharge",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:macro"
+    },
+    "ops": [
+      {
+        "source": "temp.item.currentRechargeTime",
+        "target": "currentStats.stamina.currentRechargeTime",
         "op": "replace"
       }
     ]

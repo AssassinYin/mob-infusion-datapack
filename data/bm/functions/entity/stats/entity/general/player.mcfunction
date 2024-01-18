@@ -3,7 +3,7 @@
 # macro: none
 
 #base
-scoreboard players operation #temp AttackSpeed = @s AttackSpeedBase
+scoreboard players operation #temp AttackSpeed = @s attackSpeedBase
 
 #effect
 scoreboard players operation #temp AttackSpeed += @s AttackSpeedEffect

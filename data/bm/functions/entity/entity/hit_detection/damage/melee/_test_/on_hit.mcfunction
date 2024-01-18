@@ -3,9 +3,9 @@
 # macro: none
 
 say Hit me!
-function bm:entity/action/hit_detection/damage/melee/empty_stamina
+function bm:entity/entity/hit_detection/damage/melee/empty_stamina
 
-execute store result score #damageMult temp run data get entity @s SelectedItem.tag.stats.AttackDamageMult 1000
-scoreboard players operation #finalDamageDealt temp = @s AttackDamage
-scoreboard players operation #finalDamageDealt temp *= #damageMult temp
-scoreboard players operation #finalDamageDealt temp /= 1000 Const
+execute store result score &damageMult Temp run data get entity @s SelectedItem.tag.stats.WeaponAttributes.Multiplier.AttackDamage
+scoreboard players operation &damageDealt Temp = @s AttackDamage
+scoreboard players operation &damageDealt Temp *= &damageMult Temp
+scoreboard players operation &damageDealt Temp /= #1000 CONST

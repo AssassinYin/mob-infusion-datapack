@@ -15,14 +15,15 @@ function bm:entity/stats/entity/energy/regenerate
 #update health regeneration
 function bm:entity/stats/entity/health/regenerate
 
-#deal magic damage
-execute if score @s MaDamage matches 1.. run function bm:entity/stats/entity/damage/magic/inflict
-
 #deal physical damage
-execute if score @s PhDamage matches 1.. run function bm:entity/stats/entity/damage/physical/inflict
+execute if score @s phDamage matches 1.. run function bm:entity/stats/entity/damage/inflict {"bypassArmor":"0","bypassResistance":"0","damageType":"phDamage"}
+#---#
+#deal magic damage
+execute if score @s maDamage matches 1.. if score @s shield matches 0 run function bm:entity/stats/entity/damage/inflict {"bypassArmor":"0","bypassResistance":"0","damageType":"maDamage"}
+execute if score @s maDamage matches 1.. if score @s shield matches 1.. run function bm:entity/stats/entity/damage/inflict {"bypassArmor":"1","bypassResistance":"0","damageType":"maDamage"}
 
-#deal piercing damage
-execute if score @s PiDamage matches 1.. run function bm:entity/stats/entity/damage/piercing/inflict
+#deal pierce damage
+execute if score @s piDamage matches 1.. run function bm:entity/stats/entity/damage/inflict {"bypassArmor":"1","bypassResistance":"1","damageType":"piDamage"}
 
 #update shield bar
-execute if score @s Shield matches 1.. run function bm:entity/stats/entity/shield/decay
+execute if score @s shield matches 1.. run function bm:entity/stats/entity/shield/decay

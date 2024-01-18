@@ -1,4 +1,4 @@
-###  ###
+### Initialize all item stats related resource ###
 # executor: the server side
 # macro: none
 

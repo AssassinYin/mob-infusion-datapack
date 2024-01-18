@@ -30,5 +30,5 @@ execute if entity @s[advancements={bm:hit_detection/on_hurt={bit27=true}}] run s
 execute if entity @s[advancements={bm:hit_detection/on_hurt={bit28=true}}] run scoreboard players add $hit entityid 268435456
 execute if entity @s[advancements={bm:hit_detection/on_hurt={bit29=true}}] run scoreboard players add $hit entityid 536870912
 execute if entity @s[advancements={bm:hit_detection/on_hurt={bit30=true}}] run scoreboard players add $hit entityid 1073741824
-execute if entity @s[advancements={bm:hit_detection/on_hurt={bit31=true}}] run scoreboard players operation $hit entityid *= -1 CONST
+execute if entity @s[advancements={bm:hit_detection/on_hurt={bit31=true}}] run scoreboard players operation $hit entityid *= #-1 CONST
 execute as @e if score @s entityid = $hit entityid run function bm:entity/entity/hit_detection/execute/on_hurt
