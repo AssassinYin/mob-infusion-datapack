@@ -19,13 +19,14 @@
 # for score target => intend to be changed by outer func
 # for data storage => intend to be temporary storage
 # for item => intend to be updated during other events
-# used by all macro parameters
+# used by macro parameters not accepting from an array
 #
 # UpperCamelCase : score/data loaded data from other storage
 # for score objective => not intend to be changed manually
 # intend to be changed by inner/outer func
 # for data storage => intend to be permanently storage
 # for item => intend to be read only
+# used by macro parameters accepting from an array
 #
 # snake_case     : used by stored macro func label
 # kebab-case     : used by status check tag label

@@ -1,3 +1,7 @@
+### Check hit block ###
+# executor: the marker of the raycaster
+# macro: none
+
 #if going hit blocks
 execute unless block ~ ~ ~ #bm:raycast_ignore run function bm:raycast/if_should_bounce
 

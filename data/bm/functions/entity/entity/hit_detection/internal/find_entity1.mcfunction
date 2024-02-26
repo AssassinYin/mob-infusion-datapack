@@ -1,3 +1,7 @@
+### Find attacker ###
+# executor: damaged entity
+# macro: none
+
 scoreboard players set $hit entityid 0
 execute if entity @s[advancements={bm:hit_detection/on_hurt={bit0=true}}] run scoreboard players add $hit entityid 1
 execute if entity @s[advancements={bm:hit_detection/on_hurt={bit1=true}}] run scoreboard players add $hit entityid 2

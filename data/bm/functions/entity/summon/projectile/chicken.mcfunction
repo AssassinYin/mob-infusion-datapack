@@ -1,8 +1,7 @@
 ### Summon a item projectile ###
 # executor: owner entity of summoning projectile
-# macro: $display_item: a minecraft item id
-#        $nogravity: 0 or 1
-#        $speed: slow, normal or fast
+# macro: $noGravity:    entity has gravity or not
+#        $speed:        slow, normal or fast
 #---#
 #        $blockHitFunc:      a function to executed when hit block
 #        $damageFunc:        a function to executed for damage

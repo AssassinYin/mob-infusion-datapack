@@ -16,5 +16,9 @@ execute as @a[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:1}}}}] run fu
 execute as @a[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:2}}}}] run function bm:item/stats/quiver/update
 #update crossbow weapon's stats in player's inventory
 execute as @a[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:3}}}}] run function bm:item/stats/quiver/update
+#update potion weapon's stats in player's inventory
+execute as @a[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:4}}}}] run function bm:item/stats/right_click_melee/update
+#update punch weapon's stats in player's inventory
+execute as @a[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:5}}}}] run function bm:item/stats/right_click_melee/update
 
 tag @a[tag=offhand-swaped] remove offhand-swaped

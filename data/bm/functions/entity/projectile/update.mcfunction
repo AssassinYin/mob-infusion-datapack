@@ -3,9 +3,11 @@
 # macro: none
 
 #for display bug
-data modify entity @s[type=item] Age set value -32768
+data modify entity @s Age set value -32768
 
 #hit box detection
 
 #particle
-execute at @s run particle end_rod ~ ~ ~ 0 0 0 0 1 force @a
+data modify storage minecraft:macro temp.entity.func set from entity @s Item.tag.particleFunc
+data modify storage minecraft:macro temp.entity.ofWhich set value "particle"
+execute at @s run function bm:entity/projectile/func/find_func with storage minecraft:macro temp.entity

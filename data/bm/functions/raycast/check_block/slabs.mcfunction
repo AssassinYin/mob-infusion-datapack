@@ -1,3 +1,7 @@
+### Detect if can go through slab block or not ###
+# executor: the marker of the raycaster
+# macro: none
+
 #get y coord's decimal points (ex: Y=69.45 -> .y = 45)
 execute store result score .y Raycast run data get entity @s Pos[1] 100.0
 scoreboard players operation .y Raycast %= #100 Raycast

@@ -1,3 +1,7 @@
+### Assign a id to the entity ###
+# executor: the entity
+# macro: none
+
 tag @s add entityidset
 # Assign a new id to the entity
 execute store result score @s entityid run scoreboard players add $highest entityid 1

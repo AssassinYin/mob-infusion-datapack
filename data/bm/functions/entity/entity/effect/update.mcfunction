@@ -35,6 +35,7 @@ effect give @s saturation 1 255 true
 #3 Haste
 #4 Mining Fatigue
 #5 Strength
+execute if data entity @s {ActiveEffects:[{Id:5}]} run effect clear @s strength
 #6 Instant Health
 effect give @s instant_health 2 255 true
 #7 Instant Damage

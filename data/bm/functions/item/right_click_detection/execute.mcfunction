@@ -1,14 +1,21 @@
 ### Check which item player right click every tick ###
-# executor: the server side
+# executor: player right clicked an ender eye
 # macro: none
 
-#alchemist
-execute if entity @s[nbt={SelectedItem:{tag:{stats:{WeaponType:4}}}}]
+#ability
+
+#item
+
+#weapon
+#potion
+execute if entity @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:4}}}}] run function bm:item/right_click_detection/weapon/potion/if_condition_met
 #punch
-execute if entity @s[nbt={SelectedItem:{tag:{stats:{WeaponType:5}}}}]
+execute if entity @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:5}}}}] run function bm:item/right_click_detection/weapon/punch/if_condition_met
 #blaster
-execute if entity @s[nbt={SelectedItem:{tag:{stats:{WeaponType:6}}}}]
+execute if entity @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:6}}}}]
 #ray
-execute if entity @s[nbt={SelectedItem:{tag:{stats:{WeaponType:7}}}}]
+execute if entity @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:7}}}}]
 #beam
-execute if entity @s[nbt={SelectedItem:{tag:{stats:{WeaponType:8}}}}]
+execute if entity @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:8}}}}]
+
+advancement revoke @s only bm:right_click_detection/eyes

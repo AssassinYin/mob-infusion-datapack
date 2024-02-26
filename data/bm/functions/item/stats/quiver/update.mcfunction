@@ -13,8 +13,8 @@ execute store result score &rechargeMode Temp run data get entity @s SelectedIte
 #currentMaximum & currentRechargeTime affected by player's AttackSpeed & WeaponAttributes.Multiplier.AttackSpeed
 #---#
 
-execute if score @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:2}}}}] UseBow matches 1.. run function bm:item/stats/quiver/empty_bow_quiver
-execute if score @s[nbt={SelectedItem:{tag:{WeaponAttributes:{WeaponType:3}}}}] UseCrossbow matches 1.. run function bm:item/stats/quiver/empty_crossbow_quiver
+execute if score @s UseBow matches 1.. run function bm:item/stats/quiver/empty/quiver
+execute if score @s UseCrossbow matches 1.. run function bm:item/stats/quiver/empty/quiver
 
 execute if score &rechargeMode Temp matches 0 run function bm:item/stats/quiver/recharge_whole_bundle_after_depleted/update
 execute if score &rechargeMode Temp matches 1 run function bm:item/stats/quiver/recharge_arrow_over_time/update

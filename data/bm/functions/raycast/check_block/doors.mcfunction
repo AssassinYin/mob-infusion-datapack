@@ -1,3 +1,7 @@
+### Detect if can go through door block or not ###
+# executor: the marker of the raycaster
+# macro: none
+
 execute store result score #x Raycast run data get entity @s Pos[0] 100.0
 execute store result score #z Raycast run data get entity @s Pos[2] 100.0
 scoreboard players operation #x Raycast %= #100 Raycast

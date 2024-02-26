@@ -1,4 +1,7 @@
-### @s = aec
+### @s = aec ###
+# executor: the marker of the raycaster
+# macro: none
+
 scoreboard players remove %bounceTriggerTime Raycast 1
 
 execute unless block ~0.25 ~ ~ air store result entity @s Rotation[0] float -1 run data get entity @s Rotation[0]

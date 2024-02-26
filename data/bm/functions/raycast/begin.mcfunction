@@ -1,19 +1,19 @@
 ### Let an entity fire a raycast ###
 # executor: the raycaster
-# macro: $distance:             how far can the raycast travel, 0.25 blocks per unit
-#        $penetrateThroughWall: set if penetrate through wall or not
-#        $bounceTriggerTime:    how many times can the raycast bounce on wall
+# macro: $bounceTriggerTime:    how many times can the raycast bounce on wall
+#        $distance:             how far can the raycast travel, 0.25 blocks per unit
 #        $chainRange:           how far can the raycast jump between entity
 #        $chainTriggerTime:     how many times can the raycast jump between entity
-#---#
+#        $penetrateThroughWall: set if penetrate through wall or not
+#        $bounceBlockHitFunc:   a function to executed when bounce on block
 #        $blockHitFunc:         a function to executed when hit block
-#        $damageFunc:           a function to executed for damage
 #        $entityHitFunc:        a function to executed when hit entity
 #        $hitFunc:              a function to executed when hit
-#        $particleFunc:         a function for particle display
-#        $statsFunc:            a function for stats of raycast
+#        $particleTrailFunc:    a function for particle trail display
+
 #function bm:raycast/begin {distance:40, penetrateThroughWall:1, bounceTriggerTime:0, chainTriggerTime:0, chainRange:0}
 
+#stats
 $scoreboard players set %iteration Raycast $(distance)
 $scoreboard players set %penetrateThroughWall Raycast $(penetrateThroughWall)
 $scoreboard players set %bounceTriggerTime Raycast $(bounceTriggerTime)
@@ -21,6 +21,12 @@ $scoreboard players set %chainTriggerTime Raycast $(chainTriggerTime)
 
 $data modify storage minecraft:macro temp.raycast.distance set value $(distance)
 $data modify storage minecraft:macro temp.raycast.chainRange set value $(chainRange)
+
+$data modify storage minecraft:macro temp.raycast.bounceBlockHitFunc set value $(bounceBlockHitFunc)
+$data modify storage minecraft:macro temp.raycast.blockHitFunc set value $(blockHitFunc)
+$data modify storage minecraft:macro temp.raycast.entityHitFunc set value $(entityHitFunc)
+$data modify storage minecraft:macro temp.raycast.hitFunc set value $(hitFunc)
+$data modify storage minecraft:macro temp.raycast.particleTrailFunc set value $(particleTrailFunc)
 
 #temporary marker to fired the raycast
 summon marker ~ ~ ~ {Tags:["raycaster"]}
@@ -30,7 +36,7 @@ tp @e[type=marker,tag=raycaster] @s
 tag @s add this
 
 #anchors raycast starting position to the eyes
-execute anchored eyes positioned ^ ^ ^ as @e[type=marker,tag=raycaster] run function bm:raycast/raycast
+execute anchored eyes positioned ^ ^ ^ as @e[type=marker,tag=raycaster] run function bm:raycast/raycast with storage temp.raycast
 
 #remove temporary tag
 tag @s remove this

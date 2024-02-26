@@ -1,4 +1,7 @@
-#hit detection
+### Initialize all entity hit detection related resource ###
+# executor: the server side
+# macro: none
+
 scoreboard objectives add entityid dummy
 
 scoreboard objectives add entityid.0 dummy
