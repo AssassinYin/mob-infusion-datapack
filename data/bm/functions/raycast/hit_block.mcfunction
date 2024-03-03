@@ -6,4 +6,4 @@
 scoreboard players set %iteration Raycast 0
 
 #apply function
-$execute at @s run function bm:raycast/func/$(blockHitFunc)/hit_block
+$function bm:raycast/func/$(blockHitFunc)/hit_block

@@ -5,8 +5,8 @@
 execute if entity @s[tag=offhand-swaped] run scoreboard players set &currentCharge Temp 0
 
 execute store result score &actualArrow Temp run clear @s tipped_arrow 0
-execute unless score &currentCharge Temp = &actualArrow Temp run function bm:item/stats/quiver/has_arrow
-#---#
+execute store result storage minecraft:macro temp.item.ArrowID int 1 run data get entity @s SelectedItem.tag.WeaponAttributes.RangeStats.ArrowID 1
+execute unless score &currentCharge Temp = &actualArrow Temp run function bm:item/stats/quiver/has_arrow with storage minecraft:macro temp.item
 execute if score &currentCharge Temp matches 0 unless entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:barrier"}]}] run function bm:item/stats/quiver/has_no_arrow
 
 execute if score &currentCharge Temp matches ..0 run scoreboard players add &currentRechargeTime Temp 1

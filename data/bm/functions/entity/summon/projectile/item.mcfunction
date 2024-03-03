@@ -1,15 +1,15 @@
 ### Summon a item projectile ###
 # executor: owner entity of summoning projectile
-# macro: $noGravity:    entity has gravity or not
-#        $displayItem: a minecraft item id
-#        $speed:        slow, normal or fast
+# macro: $noGravity:     entity has gravity or not
+#        $displayItem:   a minecraft item id
+#        $speed:         slow, normal or fast
 #---#
-#        $blockHitFunc:      a function to executed when hit block
-#        $damageFunc:        a function to executed for damage
-#        $entityHitFunc:     a function to executed when hit entity
-#        $hitFunc:           a function to executed when hit
-#        $particleFunc:      a function for particle display
-#        $statsFunc:         a function for stats of raycast
+#        $blockHitFunc:  a function to executed when hit block
+#        $damageFunc:    a function to executed for damage
+#        $entityHitFunc: a function to executed when hit entity
+#        $hitFunc:       a function to executed when hit
+#        $particleFunc:  a function for particle display
+#        $statsFunc:     a function for stats of raycast
 
 $summon item ~ ~1 ~ {NoGravity:$(noGravity)b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,Age:-32768,Health:255,PickupDelay:32767,Invulnerable:1b,Motion:[0.0,0.0,0.0],Tags:["projectile","motion"],Item:{id:"$(displayItem)",Count:1b}}
 

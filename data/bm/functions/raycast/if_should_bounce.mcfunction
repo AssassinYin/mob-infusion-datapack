@@ -6,4 +6,4 @@
 execute if score %bounceTriggerTime Raycast matches 0 run function bm:raycast/hit_block with storage minecraft:macro temp.raycast
 
 #if raycast should bounce
-execute if score %bounceTriggerTime Raycast matches 1.. run function bm:raycast/special_properties/bounce
+execute if score %bounceTriggerTime Raycast matches 1.. run function bm:raycast/special_properties/bounce with storage minecraft:macro temp.raycast

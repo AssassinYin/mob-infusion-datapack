@@ -9,7 +9,7 @@ tag @s add attacker
 function bm:hitbox/reset
 
 #hitbox0
-execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=entity,tag=!this,tag=!attacker,tag=!hit,dx=0] run scoreboard players set @s H0 1
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[tag=entity,dx=0] run scoreboard players set @s H0 1
 
 #remove temporary tag
 tag @s remove attacker

@@ -1,4 +1,4 @@
-### Update offhand wjem currentCharge is 0 ###
+### Update offhand when currentCharge is 0 ###
 # executor: the player to be updated
 # macro: none
 
