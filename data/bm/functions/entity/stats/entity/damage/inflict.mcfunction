@@ -5,8 +5,8 @@
 #        $damageType: type of damage, can be maDamage, phDamage, piDamage
 
 #calculate damage reduction
-$execute if score #FALSE CONST matches $(bypassArmor) run function bm:entity/stats/entity/damage/cal_armor_protection
-$execute if score #FALSE CONST matches $(bypassResistance) run function bm:entity/stats/entity/damage/cal_resistance
+$execute if score #FALSE CONST matches $(bypassArmor) run function bm:entity/stats/entity/damage/cal_armor_protection {"damageType":"$(damageType)"}
+$execute if score #FALSE CONST matches $(bypassResistance) run function bm:entity/stats/entity/damage/cal_resistance {"damageType":"$(damageType)"}
 
 #doesn't have shield
 $execute if score @s shield matches 0 run scoreboard players operation @s health -= @s $(damageType)

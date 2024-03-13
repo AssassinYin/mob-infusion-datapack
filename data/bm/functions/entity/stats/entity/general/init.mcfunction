@@ -21,23 +21,23 @@ scoreboard objectives add Armor dummy "Current Armor Value * 1000"
 #used to store an entity's armor toughness point
 scoreboard objectives add ArmorToughness dummy "Current Armor Toughness Value * 1000"
 
-#used to store how many extra attack damage a player get from non-armor in currently tick
-scoreboard objectives add MaxEnergyEffect dummy "Current Attack Damage Stats * 1000"
+#used to store how many extra max energy a player get from effect in currently tick
+scoreboard objectives add MaxEnergyEffect dummy "Extra Max Energy Stats * 1000"
 #used to store an entity's current max energy
 scoreboard objectives add MaxEnergy dummy "Current Max Energy Value"
 
-#used to store how many extra attack damage a player get from non-armor in currently tick
-scoreboard objectives add MaxHealthEffect dummy "Current Attack Damage Stats * 1000"
+#used to store how many extra max health a player get from effect in currently tick
+scoreboard objectives add MaxHealthEffect dummy "Extra Max Health Stats * 1000"
 #used to store an entity's current max health
 scoreboard objectives add MaxHealth dummy "Current Max Health Value * 1000"
 
-#used to store how many extra attack damage a player get from non-armor in currently tick
-scoreboard objectives add AttackDamageEffect dummy "Current Attack Damage Stats * 1000"
+#used to store how many extra attack damage a player get from effect in currently tick
+scoreboard objectives add AttackDamageEffect dummy "Extra Attack Damage Stats * 1000"
 #used to store an entity's current attack damage
 scoreboard objectives add AttackDamage dummy "Current Attack Damage Stats * 1000"
 
-#used to store how many extra attack speed a player get from non-armor in currently tick
-scoreboard objectives add AttackSpeedEffect dummy "Current Attack Speed Stats * 1000"
+#used to store how many extra attack speed a player get from effect in currently tick
+scoreboard objectives add AttackSpeedEffect dummy "Extra Attack Speed Stats * 1000"
 #used to store a player's current attack speed
 scoreboard objectives add AttackSpeed dummy "Current Attack Speed Stats * 1000"
 
@@ -46,14 +46,17 @@ scoreboard objectives add ArmorMaxHealth1 dummy "Helmet Max Health Increament"
 scoreboard objectives add ArmorMaxHealth2 dummy "Chestplate Max Health Increament"
 scoreboard objectives add ArmorMaxHealth3 dummy "Leggings Max Health Increament"
 scoreboard objectives add ArmorMaxHealth4 dummy "Boots Max Health Increament"
+
 scoreboard objectives add ArmorMaxEnergy1 dummy "Helmet Max Energy Increament"
 scoreboard objectives add ArmorMaxEnergy2 dummy "Chestplate Max Energy Increament"
 scoreboard objectives add ArmorMaxEnergy3 dummy "Leggings Max Energy Increament"
 scoreboard objectives add ArmorMaxEnergy4 dummy "Boots Max Energy Increament"
+
 scoreboard objectives add ArmorAttackDamage1 dummy "Helmet Attack Damage Increament"
 scoreboard objectives add ArmorAttackDamage2 dummy "Chestplate Attack Damage Increament"
 scoreboard objectives add ArmorAttackDamage3 dummy "Leggings Attack Damage Increament"
 scoreboard objectives add ArmorAttackDamage4 dummy "Boots Attack Damage Increament"
+
 scoreboard objectives add ArmorAttackSpeed1 dummy "Helmet Attack Speed Increament"
 scoreboard objectives add ArmorAttackSpeed2 dummy "Chestplate Attack Speed Increament"
 scoreboard objectives add ArmorAttackSpeed3 dummy "Leggings Attack Speed Increament"

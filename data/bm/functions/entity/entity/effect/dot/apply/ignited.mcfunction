@@ -1,4 +1,6 @@
-### Ignited: Takes 1.0 magic damage every sec per level.
+### Ignited: Takes 1.0 magic damage every sec per level. ###
+# executor: entity to be updated
+# macro: none
 
 #effect
 scoreboard players set #damage temp 500
