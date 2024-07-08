@@ -3,7 +3,7 @@
 # macro: none
 
 #.isDebug: bool
-scoreboard players set .isDebug system 1
+scoreboard players set .isDebuging system 1
 #.borderStartRange: positive integer
 scoreboard players set .borderStartRange system 0
 #.borderEndRange: positive integer
@@ -70,7 +70,7 @@ gamerule doTileDrops false
 gamerule doTraderSpawning false
 gamerule doVinesSpread false
 gamerule doWardenSpawning false
-gamerule doWeatherCycle
+gamerule doWeatherCycle false
 gamerule drowningDamage false
 gamerule fallDamage false
 gamerule fireDamage false
