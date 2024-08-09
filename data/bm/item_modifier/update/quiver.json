@@ -1,6 +1,6 @@
 [
   {
-    "function": "minecraft:copy_nbt",
+    "function": "minecraft:copy_custom_data",
     "source": {
       "type": "minecraft:storage",
       "source": "minecraft:macro"
@@ -8,13 +8,13 @@
     "ops": [
       {
         "source": "temp.item.currentCharge",
-        "target": "currentStats.quiver.currentCharge",
+        "target": "QuiverStats.current.charge",
         "op": "replace"
       }
     ]
   },
   {
-    "function": "minecraft:copy_nbt",
+    "function": "minecraft:copy_custom_data",
     "source": {
       "type": "minecraft:storage",
       "source": "minecraft:macro"
@@ -22,7 +22,7 @@
     "ops": [
       {
         "source": "temp.item.currentRechargeTime",
-        "target": "currentStats.quiver.currentRechargeTime",
+        "target": "QuiverStats.current.rechargeTime",
         "op": "replace"
       }
     ]

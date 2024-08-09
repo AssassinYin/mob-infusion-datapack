@@ -1,4 +1,4 @@
-### Increase currentCharge and reset currentRechargeTime ###
+### Increase charge and reset recharge time ###
 # executor: the player to be updated
 # macro: none
 

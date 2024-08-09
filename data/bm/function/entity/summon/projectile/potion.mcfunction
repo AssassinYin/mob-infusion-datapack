@@ -5,7 +5,7 @@
 #        $DamageID:     id of potion amplifier
 #        $Speed:        slow, normal or fast
 
-$summon potion ~ ~ ~ {NoGravity:$(NoGravity)b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,Motion:[0.0,0.0,0.0],Tags:["projectile","motion"],Item:{id:"minecraft:potion",Count:1b,tag:{particleFunc:$(ParticleFunc),custom_potion_effects:[{id:"minecraft:bad_luck",amplifier:$(DamageID)b,duration:1},{id:"minecraft:instant_damage",amplifier:0b,duration:1},{id:"minecraft:instant_health",amplifier:0b,duration:1}],Enchantments:[{}]}}}
+$summon potion ~ ~ ~ {NoGravity:$(NoGravity)b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,Motion:[0.0,0.0,0.0],Tags:["projectile","motion"],Item:{id:"minecraft:potion",components:{custom_data:{particleFunc:$(ParticleFunc)},"minecraft:potion_contents":{custom_color:0,custom_effects:[{id:"minecraft:unluck",amplifier:$(DamageID)b,duration:1},{id:"minecraft:instant_damage",amplifier:0b,duration:1},{id:"minecraft:instant_health",amplifier:0b,duration:1}]}}}}
 
 data modify entity @e[limit=1,sort=nearest,tag=motion] Owner set from entity @s UUID
 tp @e[limit=1,sort=nearest,tag=motion] @s

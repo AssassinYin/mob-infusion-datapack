@@ -1,4 +1,4 @@
-### Update quiver score ###
+### Update charge score ###
 # executor: the player to be updated
 # macro: none
 

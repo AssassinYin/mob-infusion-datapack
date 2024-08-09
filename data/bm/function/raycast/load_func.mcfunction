@@ -5,7 +5,7 @@
 #source func
 $execute if score &srcLoaded Raycast = #FALSE CONST as @e[tag=this,limit=1] run function bm:raycast/func/$(hitFunc)/source
 
-#set func loaded to prevent execute multiple meangless func
+#set func loaded to prevent execute multiple meanless func
 scoreboard players operation &srcLoaded Raycast = #TRUE CONST
 
 #target func

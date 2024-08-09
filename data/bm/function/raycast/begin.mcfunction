@@ -30,7 +30,7 @@ $data modify storage minecraft:macro temp.raycast.hitFunc set value $(hitFunc)
 $data modify storage minecraft:macro temp.raycast.particleTrailFunc set value $(particleTrailFunc)
 
 #temporary marker to fired the raycast
-summon marker ~ ~ ~ {Tags:["raycaster"]}
+summon marker ~ ~ ~ {Tags:["raycaster","this"]}
 tp @e[type=marker,tag=raycaster] @s
 
 #temporary tag to remember who fired the raycast
@@ -44,3 +44,5 @@ tag @s remove this
 
 #remove temporary marker
 kill @e[type=marker,tag=raycaster]
+
+#/function bm:raycast/begin {bounceTriggerTime:0,distance:100,chainRange:0,chainTriggerTime:0,penetrateThroughWall:0,pierce:0,bounceBlockHitFunc:_test_,blockHitFunc:_test_,entityHitFunc:_test_,hitFunc:_test_,particleTrailFunc:_test_}

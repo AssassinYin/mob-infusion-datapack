@@ -9,9 +9,8 @@
 #        $entityHitFunc: a function to executed when hit entity
 #        $hitFunc:       a function to executed when hit
 #        $particleFunc:  a function for particle display
-#        $statsFunc:     a function for stats of raycast
 
-$summon item ~ ~1 ~ {NoGravity:$(noGravity)b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,Age:-32768,Health:255,PickupDelay:32767,Invulnerable:1b,Motion:[0.0,0.0,0.0],Tags:["projectile","motion"],Item:{id:"$(displayItem)",Count:1b}}
+$summon item ~ ~1 ~ {NoGravity:$(noGravity)b,Silent:1b,HasVisualFire:0b,Glowing:0b,CustomNameVisible:0b,Age:-32768,Health:255,PickupDelay:32767,Invulnerable:1b,Motion:[0.0,0.0,0.0],Tags:["projectile","motion"],Item:{id:"$(displayItem)"}}
 
 tp @e[limit=1,sort=nearest,tag=motion] @s
 tp @e[limit=1,sort=nearest,tag=motion] ~ ~1.35 ~

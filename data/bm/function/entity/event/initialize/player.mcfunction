@@ -12,8 +12,8 @@ attribute @s generic.attack_speed base set 1024
 attribute @s generic.max_health base set 256
 effect give @s saturation 1 255 true
 
-scoreboard players set @s attackSpeedBase 0
-scoreboard players set @s attackDamageBase 0
+scoreboard players set @s attackSpeedBase 10000
+scoreboard players set @s attackDamageBase 10000
 
 function bm:entity/event/initialize/entity
 

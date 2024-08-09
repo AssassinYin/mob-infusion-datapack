@@ -1,7 +1,6 @@
-### Update offhand with currentCharge ###
+### Update offhand with current.charge ###
 # executor: the player to be updated
 # macro: $ArrowID: id of potion amplifier
+#        $charge: current charge
 
-$item replace entity @s weapon.offhand with tipped_arrow{display:{Name:'{"translate":"weapon.ATTACKNAME.name","color":"yellow"}',Lore:['{"translate":"weapon.ATTACKNAME.trail","color":"gray"}','{"translate":"weapon.ATTACKNAME.trail","color":"gray"}','{"translate":"weapon.ATTACKNAME.trail","color":"gray"}','{"translate":"weapon.ATTACKNAME.trail","color":"gray"}','{"translate":"weapon.type.bow","color":"blue"}','{"translate":"DAMAGETYPE","color":"blue"}','[{"translate":"ATTACKDAMAGE1","color":"blue"},{"translate":"ATTACKDAMAGE2","color":"blue"}]','[{"translate":"ATTACKSPEED1","color":"blue"},{"translate":"ATTACKSPEED2","color":"blue"}]']},HideFlags:7,CustomModelData:1,ShouldBeInOffhand:1,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:0,Operation:0,UUID:[I;-783728897,-1756017994,-1622563474,-1325494387],Slot:"offhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:0,Operation:0,UUID:[I;-110166616,-1526317055,-2026616500,-286377601],Slot:"offhand"}],custom_potion_effects:[{id:"minecraft:luck",amplifier:$(ArrowID)b,duration:1,show_particles:0b,show_icon:0b,ambient:0b}],CustomPotionColor:0} 1
-#---#
-item modify entity @s weapon.offhand bm:update/quiver_arrow
+$item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_color:16711680,custom_effects:[{id:"minecraft:unluck",amplifier:$(ArrowID),duration:1,show_particles:0b,show_icon:0b,ambient:0b}]},max_stack_size=$(charge),custom_name='{"translate":"item.name"}',item_name='{"translate":"item.name"}',lore=['{"translate":"item.lore"}'],unbreakable={show_in_tooltip:false},hide_tooltip={},hide_additional_tooltip={},fire_resistant={},rarity="epic",damage=0,custom_data={ItemAttributes:{Rarity:0,BondToCharacter:1,ShouldBeInOffhand:1}}] $(charge)

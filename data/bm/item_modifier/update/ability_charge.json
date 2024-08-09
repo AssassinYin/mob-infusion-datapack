@@ -1,0 +1,44 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:macro"
+    },
+    "ops": [
+      {
+        "source": "temp.item.currentUseCooldown",
+        "target": "RechargeStats.current.useCooldown",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:macro"
+    },
+    "ops": [
+      {
+        "source": "temp.item.currentCharge",
+        "target": "RechargeStats.current.charge",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "minecraft:macro"
+    },
+    "ops": [
+      {
+        "source": "temp.item.currentRechargeTime",
+        "target": "RechargeStats.current.rechargeTime",
+        "op": "replace"
+      }
+    ]
+  }
+]

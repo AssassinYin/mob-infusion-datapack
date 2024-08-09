@@ -12,6 +12,6 @@ execute if score @s healthEffectReg matches ..-1 run scoreboard players set @s h
 execute if score @s[type=player] Hunger matches 15.. run scoreboard players operation @s HealthRegeneration += @s healthRegBase
 scoreboard players operation @s[type=!player] HealthRegeneration += @s healthRegBase
 
-scoreboard players operation @s Health += @s HealthRegeneration
+scoreboard players operation @s health += @s HealthRegeneration
 
 scoreboard players set @s HealthRegeneration 0
