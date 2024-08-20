@@ -9,31 +9,46 @@ The map is made by groups of Minecraft players and will be updated constantly.
 **Game Info:**
 
 - Modes:
-    
-    Survivor: Find supplies and defeat waves of mobs coming at you.
-    
-    Arena: Find supplies and defeat other players.
-    
-    Boss hunt: Hunt down the boss before it escaped.
-    
-    Domination: 2 team only game mode. Capture the point to gain score, the first team to gain X scores is the winner.
-    
-    Elimination: 2 team only game mode. Vanish other team’s members to gain score, the first team to gain X scores is winner.
-    
-    Deathmatch: 2 team only game mode. 2 team select their characters one by one. Everyone have only one life and the first team to vanish other team is winner. Have BP mode.
-    
-    Alley escort: Escort the alley to the end.
-    
-    Alley war: 2 team only game mode. The escort team must escort alley to the end, while the attack team must stop escort team from escorting the alley.
-    
-    Capture the flag: 2 team only game mode. Capture the flag and escort it back to your team’s base to gain score, the first to gain 10 score is the winner. Have BP mode.
-    
-    Castle defense: 2 team only game mode. Have BP mode.
-    
-    Shulker defense: Protect the Shulker from waves of monster.
-    
-    Shulker war: Protect your Shulker at all cost and vanish other team’s Shulker, if your Shulker dies, you will no longer be able to respawn. Have BP mode.
-    
+    - PVE game modes
+        
+        Survivor: Find supplies and defeat 3/5/7 waves of mobs coming at you.
+        
+        Alley escort: Escort the alley to the end.
+        
+        Boss hunt: Hunt down the boss before it escaped.
+        
+        Shulker defense: Protect the Shulker from waves of monster.
+        
+    - Multiple teams game modes
+        
+        Arena: Find supplies and defeat other players.
+        
+        Shulker war: Protect your Shulker at all cost and vanish other team’s Shulker, if your Shulker dies, you will no longer be able to respawn. Have BP mode.
+        
+    - 2 team only game modes
+        - BP modes
+            
+            Blue side ban a character
+            
+            Red side ban a character
+            
+            Blue side select a character
+            
+            Red side select a character
+            
+            Team swap for selected character
+            
+        
+        Elimination: Vanish other team’s members to gain score, the first team to gain X scores is winner.
+        
+        Deathmatch: 2 team select their characters one by one. Everyone have only one life and the first team to vanish other team is winner. Have BP mode.
+        
+        Domination: Capture the point to gain score, the first team to gain X scores is the winner.
+        
+        Capture the flag: Capture the flag and escort it back to your team’s base to gain score, the first to gain 10 score is the winner. Have BP mode.
+        
+        Alley war: The escort team must escort alley to the end, while the attack team must stop escort team from escorting the alley.
+        
 - Damage type:
     
     Physical: Damage that doesn’t bypass armor and damage resistance.
@@ -47,18 +62,80 @@ The map is made by groups of Minecraft players and will be updated constantly.
 
 # Roadmaps:
 
-- BP modes
-    
-    Blue side ban a character
-    
-    Red side ban a character
-    
-    Blue side select a character
-    
-    Red side select a character
-    
-    Team swap selected character
-    
+- #Abilities
+    - Passive - Longshot
+        
+        For every 1 block the arrow travels, increase its damage by 1%.  
+        
+    - Passive - Backstab
+        
+        Deals (X% attack damage) additional physical damage
+        
+    - Active - Deflection: 8 sec.
+        
+        Block next incoming damage for 1 sec.
+        
+        Gain Immune Control and Invulnerable for 1 sec.
+        
+        If deflection succeeded, the recharge time is reduce to 2 sec.
+        
+    - Active - Homing arrow: X sec.
+        
+        Load a homing arrow into quiver.
+        
+        Homing arrow seek its nearest target.
+        
+        Homing arrow deals (X% of attack damage) + (X% of target’s lost health) physical damage.
+        
+    - Active - : 60 sec.
+        
+        Constantly fire a beam in front of you every 0.5 sec for 5 sec.
+        
+        The beam travels up to 32 blocks and hit only one target.
+        
+        The beam deals (X% attack damage) + (X% target’s lost health) physical damage.
+        
+        The beam applies Slowness VIII for 0.8 sec.
+        
+        While using the ability, -90% movement speed.
+        
+        Cancelled the ability return (left time)*10 sec recharge time.
+        
+    - Active - Earth rupture: X sec.
+    - Active - Barrage: X sec.
+        
+        Channeling for 0.2 sec.
+        
+        Instantly fire 4/9/16/25 arrows forward.
+        
+        Arrow deals (10% attack damage) physical damage.
+        
+    - Active - Overcharge: X sec.
+        
+        
+    - Active - Defensive smash: X sec.
+    - Active - Life bonds: 2 sec.
+        
+        Consume 5 Energy upon used, 1 for each sec while active.
+        
+        Establish an enchantment bond between self and all entities within 8 blocks.
+        
+        Bonded target 
+        
+        Bonded ally’s taken damage are transfer to Infusion as piercing damage form.
+        
+        While Life bonds is active, takes 25% less damage.
+        
+    - Active - Disengage
+    - Active - Blink
+    - Active - Flash
+    - Active - Leap
+    - Active - Evade
+        
+        Become Invulnerable and Immune Control for 1.8 sec.
+        
+        Immediately teleport to attacker’s back upon taken melee attack.
+        
 - #Templates
     - Abilities
         - Passive - Longshot
@@ -461,101 +538,8 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             Nausea
             
-- #Abilities
-    - Passive - Longshot
-        
-        For every 1 block the arrow travels, increase its damage by 1%.  
-        
-    - Passive - Backstab
-        
-        Deals (X% attack damage) additional physical damage
-        
-    - Active - Deflection: 8 sec.
-        
-        Block next incoming damage for 1 sec.
-        
-        Gain Immune Control and Invulnerable for 1 sec.
-        
-        If deflection succeeded, the recharge time is reduce to 2 sec.
-        
-    - Active - Homing arrow: X sec.
-        
-        Load a homing arrow into quiver.
-        
-        Homing arrow seek its nearest target.
-        
-        Homing arrow deals (X% of attack damage) + (X% of target’s lost health) physical damage.
-        
-    - Active - Rainbow beam: 60 sec.
-        
-        Constantly fire a rainbow beam in front of you every 0.5 sec for 5 sec.
-        
-        The beam travels up to 32 blocks and hit only one target.
-        
-        The beam deals (X% attack damage) + (X% target’s lost health) physical damage.
-        
-        The beam applies Slowness VIII for 0.8 sec.
-        
-        While using the ability, -90% movement speed.
-        
-        Cancelled the ability return (left time)*10 sec recharge time.
-        
-    - Active - Whirlwind: X sec.
-        
-        
-    - Active - Wind wall: X sec.
-        
-        Spawn a wind wall that blow away most projectiles.
-        
-        Wind wall slowly fly forward in the duration.
-        
-        Wind wall last 6 sec.
-        
-        Wind wall extend 1 sec lifespan for each projectiles blocked.
-        
-        Wind wall can extend to another 6 extra sec lifespan.
-        
-    - Active - Earth rupture: X sec.
-    - Active - Barrage: X sec.
-        
-        Become Immobilized for 0.2 sec.
-        
-        Instantly fire 25 arrows forward.
-        
-        Arrow deals (10% attack damage) physical damage.
-        
-        Arrow applies slowness III for 1.5 sec.
-        
-    - Active - Overcharge: X sec.
-        
-        
-    - Active - Defensive smash: X sec.
-    - Active - Life bonds: 2 sec.
-        
-        Consume 5 Energy upon used, 1 for each sec while active.
-        
-        Establish an enchantment bond between Infusion and all entities within 8 blocks.
-        
-        Bond target takes constant damage from Infusion.
-        
-        Bond target takes damage from all sources beside DOT Type Effect.
-        
-        Bond ally’s taken damage are transfer to Infusion as piercing damage form.
-        
-        While Life bonds is active, takes 25% less damage.
-        
-    - Active - Disengage
-    - Active - Blink
-    - Active - Flash
-    - Active - Leap
-    - Active - Evade
-        
-        Become Invulnerable and Immune Control for 1.8 sec.
-        
-        Immediately teleport to attacker’s back upon taken melee attack.
-        
 
-## *Mob Infusion:*
+## *Mob Arena:*
 
 ### *Meadow:*
 
@@ -1272,6 +1256,111 @@ The map is made by groups of Minecraft players and will be updated constantly.
 
 ## *Forests:*
 
+### Cherry groves:
+
+- Characters:
+    - Sheep
+        
+        Type: Wild
+        
+        Specialized in: Constant
+        
+        - Passive - Wool protection:
+            
+            Triggered when “Wool mine” is ready.
+            
+            Gain 3 armor and 1 Armor Toughness.
+            
+        - Passive - Charged ray:
+            
+            Attack accumulates 3 energy.
+            
+            On accumulating 9 energy, strengthen next attack.
+            
+            Strengthen attack accumulates no energy.
+            
+            Strengthen attack drains all energy.
+            
+            Strengthen attack deals (25% attack damage) additional physical damage.
+            
+            Strengthen attack applies Slowness V and Brittle V for 1 sec.
+            
+            Strengthen attack grants self Speed X for 0.5 sec.
+            
+        - Attack - Fluffy ray:
+            - Beam: Right click to attack. Fire projectiles travel instantly.
+                
+                Damage type: Physical
+                
+                Beam damage: 25% of attack damage
+                
+                Attack period: 0.4*(attack speed) time per sec
+                
+                Attack distance: 6 blocks
+                
+                Charge capacity: 12
+                
+                Recover period: 4 sec
+                
+                Recover speed: 2 charge per sec
+                
+        - Active - Wool mine: 12 sec.
+            
+            Throw a wool mine forward.
+            
+            Wool mine exploded if there’s target within 1 blocks or after 12 sec.
+            
+            Use the ability again to trigger the mine earlier.
+            
+            “Wool mine” goes off recharge after the mine is triggered.
+            
+            Return 50% recharge time if triggered manually.
+            
+            Explosion deals (100% attack damage) physical damage.
+            
+            Explosion applies Stun for 1.2 sec.
+            
+        - Active - Rainbow beam: 40 sec.
+            
+            Channeling for 2.5 sec, fire a rainbow beam.
+            
+            While Channeling, gain Immune Control and -100% movement speed.
+            
+            Use the ability again or select other slots end the ability early.
+            
+            Rainbow beam travels up to 24 blocks and pierce infinity targets.
+            
+            Rainbow beam deals (50% attack damage) * (1 + Charge Time) physical damage.
+            
+            Rainbow beam applies Root for 1 sec and Brittle X for 3 sec.
+            
+        - Attributes:
+            
+            attack damage: 4
+            
+            attack speed: 1
+            
+            movement speed: 0.28
+            
+            maximum health: 14
+            
+            health regenerate speed: 0.1 per sec
+            
+            maximum energy: 9
+            
+            energy regenerate speed: 1 per sec
+            
+            armor: 6
+            
+            armor toughness: 4
+            
+            knockback resistance: 0
+            
+- Modes/Maps:
+    
+    X teams/X players/Arena/Cherry groves/256*256
+    
+
 ### Taiga Forest:
 
 - Characters:
@@ -1820,113 +1909,6 @@ The map is made by groups of Minecraft players and will be updated constantly.
     X teams/X players/Alley war/Dark mansion/256*256
     
 
-### Cherry groves:
-
-- Characters:
-    - Sheep
-        
-        Type: Wild
-        
-        Specialized in: Constant
-        
-        - Passive - Wool protection:
-            
-            Triggered when “Wool mine” is ready.
-            
-            Gain 3 armor and 1 Armor Toughness.
-            
-        - Passive - Charged ray:
-            
-            Attack accumulates 3 energy.
-            
-            On accumulating 9 energy, strengthen next attack.
-            
-            Strengthen attack accumulates no energy.
-            
-            Strengthen attack drains all energy.
-            
-            Strengthen attack deals (25% attack damage) additional physical damage.
-            
-            Strengthen attack applies Slowness V and Brittle V for 1 sec.
-            
-            Strengthen attack grants self Speed X for 0.5 sec.
-            
-        - Attack - Fluffy ray:
-            - Beam: Right click to attack. Fire projectiles travel instantly.
-                
-                Damage type: Physical
-                
-                Beam damage: 25% of attack damage
-                
-                Attack period: 0.4*(attack speed) time per sec
-                
-                Attack distance: 6 blocks
-                
-                Charge capacity: 12
-                
-                Recover period: 4 sec
-                
-                Recover speed: 2 charge per sec
-                
-        - Active - Wool mine: 12 sec.
-            
-            Throw a wool mine forward.
-            
-            Wool mine exploded if there’s target within 1 blocks or after 12 sec.
-            
-            Use the ability again to trigger the mine earlier.
-            
-            “Wool mine” goes off recharge after the mine is triggered.
-            
-            Return 50% recharge time if triggered manually.
-            
-            Explosion deals (100% attack damage) physical damage.
-            
-            Explosion applies Stun for 1.2 sec.
-            
-        - Active - Rainbow beam: 40 sec.
-            
-            After charging for a while, fire a rainbow beam.
-            
-            Charge for 2.5 sec.
-            
-            Use the ability again or select other slots end the ability early.
-            
-            Rainbow beam travels up to 24 blocks and pierce infinity targets.
-            
-            Rainbow beam deals (50% attack damage) * (1 + Charge Time) physical damage.
-            
-            Rainbow beam applies Root for 1 sec and Brittle X for 3 sec.
-            
-            While charging, gain Immune Control, -50% movement speed and become Charged.
-            
-        - Attributes:
-            
-            attack damage: 4
-            
-            attack speed: 1
-            
-            movement speed: 0.28
-            
-            maximum health: 14
-            
-            health regenerate speed: 0.1 per sec
-            
-            maximum energy: 9
-            
-            energy regenerate speed: 1 per sec
-            
-            armor: 6
-            
-            armor toughness: 4
-            
-            knockback resistance: 0
-            
-- Modes/Maps:
-    
-    X teams/X players/Arena/Cherry groves/256*256
-    
-
 ## *River & Ocean:*
 
 ### Swamp:
@@ -2132,7 +2114,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Turtle UNCOMPLETE
+    - Turtle INCOMPLETE
         
         Type: 
         
@@ -2176,7 +2158,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
         
         - Passive - Escape plan: 60 sec.
             
-            Triggered upon taking damage greater than 10% of Infusion’s health.
+            Triggered upon taking damage greater than 10% of maximum health.
             
             Gain Invisibility, Speed III and Resistance X for 1 sec.
             
@@ -2266,7 +2248,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### Deep ocean:
 
 - **Characters:**
-    - Drowned
+    - Drowned INCOMPLETE
         
         Type: Undead
         
@@ -2293,6 +2275,8 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             If raining, strike an additional lightning upon impact.
             
+            Lightning deals 
+            
         - Active - Riptide: 10 sec.
             
             Enchanted your trident with Riptide and dash forward.
@@ -2304,6 +2288,8 @@ The map is made by groups of Minecraft players and will be updated constantly.
         - Active - Channeling: 20 sec.
             
             Enchanted your trident with Channeling.
+            
+            Lightning deals 
             
             If energy bar is full, empty energy bar and start a thunderstorm.
             
@@ -2325,7 +2311,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Guardian
+    - Guardian INCOMPLETE
         
         Type: Water
         
@@ -2466,7 +2452,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Cave:**
 
 - **Characters:**
-    - Bat/Halloween bat
+    - Bat/Halloween bat INCOMPLETE
         
         Type: 
         
@@ -2497,7 +2483,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Spider/Cave Spider
+    - Spider/Cave Spider INCOMPLETE
         
         Type: 
         
@@ -2528,7 +2514,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Silverfish
+    - Silverfish INCOMPLETE
         
         Type: 
         
@@ -2559,7 +2545,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Warden
+    - Warden INCOMPLETE
         
         Type: Undead
         
@@ -2612,7 +2598,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Cliff:**
 
 - **Characters:**
-    - Llama/Trader llama/Snow llama
+    - Llama/Trader llama/Snow llama INCOMPLETE
         
         Type: 
         
@@ -2643,7 +2629,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Goat
+    - Goat INCOMPLETE
         
         Type: 
         
@@ -2652,6 +2638,52 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
         - Attack -:
             
+            
+        - Active -: X sec.
+            
+            
+        - Attributes:
+            
+            attack damage: X
+            
+            attack speed: X
+            
+            maximum health: X
+            
+            movement speed: X
+            
+            health regenerate speed: X per sec
+            
+            armor: X
+            
+            armor toughness: X
+            
+            knockback resistance: X
+            
+    - Breeze INCOMPLETE
+        
+        Type: 
+        
+        - Passive -:
+            
+            
+        - Attack -:
+            
+            
+        - Active - Whirlwind: X sec.
+            
+            
+        - Active - Wind wall: X sec.
+            
+            Spawn a wind wall that blow away most projectiles.
+            
+            Wind wall slowly fly forward in the duration.
+            
+            Wind wall last 6 sec.
+            
+            Wind wall extend 1 sec lifespan for each projectiles blocked.
+            
+            Wind wall can extend to another 6 extra sec lifespan.
             
         - Active -: X sec.
             
@@ -2681,7 +2713,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Desert land:**
 
 - **Characters:**
-    - Wandering Trader
+    - Wandering Trader INCOMPLETE
         
         Type: 
         
@@ -2712,7 +2744,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Camel
+    - Camel INCOMPLETE
         
         Type: 
         
@@ -2849,7 +2881,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Polar Bear
+    - Polar Bear INCOMPLETE
         
         Type: 
         
@@ -2907,7 +2939,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Nether Part I:**
 
 - **Characters:**
-    - Piglin/Piglin Brute UNCOMPLETE
+    - Piglin/Piglin Brute INCOMPLETE
         
         Type: Undead
         
@@ -2938,7 +2970,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Hoglin/Zoglin UNCOMPLETE
+    - Hoglin/Zoglin INCOMPLETE
         
         Type: Undead
         
@@ -2969,7 +3001,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Strider UNCOMPLETE
+    - Strider INCOMPLETE
         
         Type: 
         
@@ -3000,7 +3032,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Ghast UNCOMPLETE
+    - Ghast INCOMPLETE
         
         Type: Undead
         
@@ -3252,7 +3284,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Magma Cube UNCOMPLETE
+    - Magma Cube INCOMPLETE
         
         Type: Undead
         
@@ -3363,38 +3395,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Endermite UNCOMPLETE
-        
-        Type: 
-        
-        - Passive -:
-            
-            
-        - Attack -:
-            
-            
-        - Active -: X sec.
-            
-            
-        - Attributes:
-            
-            attack damage: X
-            
-            attack speed: X
-            
-            maximum health: X
-            
-            movement speed: X
-            
-            health regenerate speed: X per sec
-            
-            armor: X
-            
-            armor toughness: X
-            
-            knockback resistance: X
-            
-    - Shulker UNCOMPLETE
+    - Endermite INCOMPLETE
         
         Type: 
         
@@ -3435,7 +3436,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Villager Part I:**
 
 - **Characters:**
-    - Cartographer UNCOMPLETE
+    - Cartographer INCOMPLETE
         
         Type: Villager
         
@@ -3466,7 +3467,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Librarian UNCOMPLETE
+    - Librarian INCOMPLETE
         
         Type: Villager
         
@@ -3620,7 +3621,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Villager Part II:**
 
 - **Characters:**
-    - Iron Golem UNCOMPLETE
+    - Iron Golem INCOMPLETE
         
         Type: 
         
@@ -3657,7 +3658,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Fletcher UNCOMPLETE
+    - Fletcher INCOMPLETE
         
         Type: 
         
@@ -3688,7 +3689,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Armorer UNCOMPLETE
+    - Armorer INCOMPLETE
         
         Type: 
         
@@ -3719,7 +3720,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Toolsmith UNCOMPLETE
+    - Toolsmith INCOMPLETE
         
         Type: 
         
@@ -3750,7 +3751,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Weaponsmith UNCOMPLETE
+    - Weaponsmith INCOMPLETE
         
         Type: 
         
@@ -3788,7 +3789,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Pillager:**
 
 - **Characters:**
-    - Pillager UNCOMPLETE
+    - Pillager INCOMPLETE
         
         Type: 
         
@@ -3827,7 +3828,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Illusioner UNCOMPLETE
+    - Illusioner INCOMPLETE
         
         Type: 
         
@@ -3858,7 +3859,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Ravager UNCOMPLETE
+    - Ravager INCOMPLETE
         
         Type: 
         
@@ -3889,7 +3890,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Enchanter UNCOMPLETE
+    - Enchanter INCOMPLETE
         
         Type: 
         
@@ -3923,7 +3924,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Iceologer UNCOMPLETE
+    - Iceologer INCOMPLETE
         
         Type: 
         
@@ -3961,7 +3962,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Villager Part III:**
 
 - **Characters:**
-    - Fisherman UNCOMPLETE
+    - Fisherman INCOMPLETE
         
         Type: 
         
@@ -3992,7 +3993,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Butcher UNCOMPLETE
+    - Butcher INCOMPLETE
         
         Type: 
         
@@ -4023,7 +4024,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Shepherd UNCOMPLETE
+    - Shepherd INCOMPLETE
         
         Type: 
         
@@ -4054,7 +4055,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Leatherworker UNCOMPLETE
+    - Leatherworker INCOMPLETE
         
         Type: 
         
@@ -4092,7 +4093,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
 ### **Villager Part IV:**
 
 - **Characters:**
-    - Nitwit UNCOMPLETE
+    - Nitwit INCOMPLETE
         
         Type: 
         
@@ -4123,7 +4124,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Masons UNCOMPLETE
+    - Masons INCOMPLETE
         
         Type: 
         
@@ -4154,7 +4155,7 @@ The map is made by groups of Minecraft players and will be updated constantly.
             
             knockback resistance: X
             
-    - Farmer UNCOMPLETE
+    - Farmer INCOMPLETE
         
         Type: 
         
