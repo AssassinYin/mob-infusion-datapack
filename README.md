@@ -4,7 +4,7 @@
 
 This repo is a mini game map heavily inspired by the game “Super Smash Mobs” in Mineplex Server and Maps “Undertale Arena”.
 
-This a FPS/MOBA game where player play as different Minecraft mob and fight in different scenarios. This is abandoned due to content i wish to complete too large and couldn't find people to make art/related design, I couldn't see the way how can it profits.
+This a FPS/MOBA Overwatch-like game where player play as different Minecraft mob and fight in different scenarios. This is abandoned due to content i wish to complete too large and couldn't find people to make art/related design, I couldn't see the way how can it profits.
 
 Almost all base system is completed, with only effect system needs rewrite, abilities system and gun system not being started.
 
